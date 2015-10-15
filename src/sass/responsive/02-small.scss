@@ -1,0 +1,28 @@
+@media screen and (min-width: 28em) {
+    .site-wrapper {
+        font-size: 110%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .header {
+        font-size: 110%;
+    }
+    .long-list li {
+        flex: 0 28%;
+    }
+    .contact-details dt {
+        float: left;
+        padding-right: 1em;
+        min-width: 7em;
+        text-align: right;
+    }
+    .long-list {
+        flex-flow: row wrap;
+    }
+    .skills {
+        align-items: center;
+    }
+    .skills li {
+        flex: 1 46%;
+    }
+}

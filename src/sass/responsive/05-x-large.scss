@@ -1,0 +1,20 @@
+@media screen and (min-width: 52em) {
+    .desktop-only {
+        display: block;
+    }
+    .columns {}
+    .two-column > .col {
+        float: left;
+        max-width: 50%;
+        padding-right: 1em;
+    }
+    .two-column > .col:nth-child(2n + 1) {
+        float: right;
+        padding-right: 0;
+        padding-left: 1em;
+    }
+    .columns .full-width {
+        clear: both;
+        max-width: 100%;
+    }
+}

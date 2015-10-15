@@ -1,0 +1,104 @@
+body {
+    color: $font-color;
+    background-color: $site-bg-color;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+:link {
+    color: $link-color;
+}
+
+:visited {
+    color: $link-visited-color;
+}
+
+a:hover {
+    color: $link-hover-color;
+}
+
+:active {}
+
+.title {
+    margin: 0.75em 0 0.25em 0;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.section {
+    margin: 1em 0;
+    border-radius: 1em;
+    background-color: $section-bg-color;
+    color: $section-color;
+    padding: 0.5em 1em 1em;
+    
+    .title {
+        color: $section-title-color;
+    }
+}
+
+.list {
+    list-style-position: outside;
+    margin: 0.25em 0;
+    padding: 0;
+}
+
+.long-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.list li {
+    margin-left: 1em;
+}
+
+.long-list li {
+    flex: 0 43%;
+    padding: .25em 2em .25em 0;
+}
+
+.since {
+    color: $since-color;
+    font-size: 0.75em;
+    font-weight: normal;
+}
+
+.skills {
+    flex-flow: column nowrap;
+}
+
+.contact-details {
+    margin: 1em auto;
+    max-width: 25em;
+}
+
+.contact-details dt {
+    font-weight: bold;
+}
+.contact-details dd {
+    margin-left: 1.5em;
+}
+
+.job {
+    border-bottom: $job-border-color solid .2em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+    &:last-child {
+        border-bottom: 0 none;
+    }
+}
+
+.employment-date {
+    display: block;
+    color: $employment-date-color;
+    font-size: 0.75em;
+    padding-top: 0.5em;
+}
+
+.start-date:after {
+    content: '-';
+    padding-left: 0.3em;
+}

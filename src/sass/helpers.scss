@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.group:before,
+.group:after,
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.group:after,
+.clearfix:after {
+    clear: both;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.justify-center {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
