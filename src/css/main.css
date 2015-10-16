@@ -43,13 +43,13 @@ p, ul, ol, dl {
 
 body {
   color: #444;
-  background-color: #f6ae2d;
+  background-color: #70c1b3;
   font-size: 0.9em;
   line-height: 1.5;
 }
 
 :link {
-  color: #183059;
+  color: #247ba0;
 }
 
 :visited {
@@ -57,7 +57,7 @@ body {
 }
 
 a:hover {
-  color: #86bbd8;
+  color: #52b0d8;
 }
 
 a:active {
@@ -65,12 +65,12 @@ a:active {
 }
 
 .title {
-  color: #f26419;
+  color: #ffe066;
   margin: 0.75em 0 0.25em 0;
 }
 
 .main-title {
-  color: #f26419;
+  color: #f25f5c;
   text-align: center;
   margin-top: 0;
 }
@@ -82,7 +82,7 @@ a:active {
 .section {
   margin: 1em 0;
   border-radius: 1em;
-  background-color: #33658a;
+  background-color: #50514f;
   color: #ffffc7;
   padding: 0.5em 1em 1em;
 }
@@ -117,7 +117,7 @@ a:active {
 }
 
 .since {
-  color: #f6ae2d;
+  color: #f25f5c;
   font-size: 0.75em;
   font-weight: normal;
 }
@@ -143,7 +143,7 @@ a:active {
 }
 
 .job {
-  border-bottom: #4180af solid 0.2em;
+  border-bottom: #6a6b68 solid 0.2em;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
@@ -153,7 +153,7 @@ a:active {
 
 .employment-date {
   display: block;
-  color: #f6ae2d;
+  color: #f25f5c;
   font-size: 0.75em;
   padding-top: 0.5em;
 }
