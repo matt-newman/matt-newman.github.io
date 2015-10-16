@@ -6,25 +6,34 @@ body {
 }
 
 :link {
-    color: $link-color;
+    color: $link;
 }
 
 :visited {
-    color: $link-visited-color;
+    color: $link-visited;
 }
 
 a:hover {
-    color: $link-hover-color;
+    color: $link-hover;
 }
 
-:active {}
+a:active {
+    color: $link-active;
+}
 
 .title {
+    color: $title-color;
     margin: 0.75em 0 0.25em 0;
 }
 
 .main-title {
+    color: $site-title-color;
     text-align: center;
+    margin-top: 0;
+}
+
+.section-title {
+    border-bottom: solid 2px;
 }
 
 .section {
@@ -33,10 +42,6 @@ a:hover {
     background-color: $section-bg-color;
     color: $section-color;
     padding: 0.5em 1em 1em;
-    
-    .title {
-        color: $section-title-color;
-    }
 }
 
 .list {
@@ -48,6 +53,9 @@ a:hover {
 .long-list {
     display: flex;
     flex-flow: row wrap;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .list li {
@@ -56,7 +64,7 @@ a:hover {
 
 .long-list li {
     flex: 0 43%;
-    padding: .25em 2em .25em 0;
+    padding: .25em 1em .25em 0;
 }
 
 .since {
@@ -67,6 +75,7 @@ a:hover {
 
 .skills {
     flex-flow: column nowrap;
+    max-width: 100%;
 }
 
 .contact-details {

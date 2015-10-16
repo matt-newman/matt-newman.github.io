@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: 'src/sass/**',
-                tasks: ['sass', 'cssmin'],
+                tasks: ['sass', 'postcss', 'cssmin'],
                 options: {
                     livereload: true,
                     spawn: false,
@@ -59,6 +59,19 @@ module.exports = function(grunt) {
                 files: {
                     'src/css/main.css': 'src/sass/build.scss' // 'destination': 'source'
                 }
+            }
+        },
+        postcss: {
+            options: {
+                map: true,
+                processors: [
+                    require('autoprefixer')({
+                        browsers: ['last 2 versions']
+                    })
+                ]
+            },
+            dist: {
+                src: 'src/css/main.css'
             }
         },
         uglify: {
@@ -114,10 +127,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-watch');    
 
-    grunt.registerTask('default', ['copy', 'jshint', 'sass', 'uglify', 'cssmin', 'imagemin']);
+    grunt.registerTask('default', ['copy', 'jshint', 'sass', 'uglify', 'postcss', 'cssmin', 'imagemin']);
     grunt.registerTask('server', ['default', 'connect:server:keepalive']);
 };
