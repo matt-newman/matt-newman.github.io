@@ -58,11 +58,11 @@ a:active {
     margin-right: auto;
 }
 
-.long-list li {
+.long-list.technologies li {
     display: inline;
 }
 
-.long-list > li:not(:last-child)::after {
+.long-list.technologies > li:not(:last-child)::after {
   content: ",";
   margin-left: -0.25em;
 }

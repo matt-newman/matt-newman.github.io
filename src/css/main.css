@@ -105,11 +105,11 @@ a:active {
   margin-right: auto;
 }
 
-.long-list li {
+.long-list.technologies li {
   display: inline;
 }
 
-.long-list > li:not(:last-child)::after {
+.long-list.technologies > li:not(:last-child)::after {
   content: ",";
   margin-left: -0.25em;
 }
@@ -181,12 +181,6 @@ a:active {
         -ms-flex: 0 28%;
             flex: 0 28%;
     padding: .25em 1em .25em 0;
-  }
-
-  .long-list li {
-    -webkit-flex: 0 28%;
-        -ms-flex: 0 28%;
-            flex: 0 28%;
   }
 
   .contact-details dt {
