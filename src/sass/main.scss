@@ -58,13 +58,17 @@ a:active {
     margin-right: auto;
 }
 
-.list li {
-    margin-left: 1em;
+.long-list li {
+    display: inline;
 }
 
-.long-list li {
-    flex: 0 43%;
-    padding: .25em 1em .25em 0;
+.long-list > li:not(:last-child)::after {
+  content: ",";
+  margin-left: -0.25em;
+}
+
+.list li {
+    margin-left: 1em;
 }
 
 .since {
