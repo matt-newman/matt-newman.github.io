@@ -176,6 +176,12 @@ a:active {
     font-size: 110%;
   }
 
+  .long-list {
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+
   .long-list li {
     -webkit-flex: 0 28%;
         -ms-flex: 0 28%;
@@ -183,17 +189,16 @@ a:active {
     padding: .25em 1em .25em 0;
   }
 
+  .long-list.technologies > li:not(:last-child)::after {
+    content: '';
+    margin: auto;
+  }
+
   .contact-details dt {
     float: left;
     padding-right: 1em;
     min-width: 7em;
     text-align: right;
-  }
-
-  .long-list {
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
   }
 
   .skills {

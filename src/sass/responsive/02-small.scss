@@ -7,18 +7,22 @@
     .header {
         font-size: 110%;
     }
+    .long-list {
+        flex-flow: row wrap;
+    }
     .long-list li {
         flex: 0 28%;
         padding: .25em 1em .25em 0;
+    }
+    .long-list.technologies > li:not(:last-child)::after {
+        content: '';
+        margin: auto;
     }
     .contact-details dt {
         float: left;
         padding-right: 1em;
         min-width: 7em;
         text-align: right;
-    }
-    .long-list {
-        flex-flow: row wrap;
     }
     .skills {
         align-items: center;

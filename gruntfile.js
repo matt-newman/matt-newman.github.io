@@ -4,8 +4,8 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             scripts: {
-                files: ['!src/js/lib/**','src/js/*.js'],
-                tasks: ['jshint'],
+                files: ['!src/js/vendor/**','src/js/**'],
+                tasks: ['jshint', 'uglify'],
                 options: {
                     spawn: false,
                 }
@@ -33,17 +33,18 @@ module.exports = function(grunt) {
                     // copies js lib files to dest folder
                     {
                         expand: true,
-                        cwd: 'src/js/lib',
+                        cwd: 'src/js/vendor',
                         src: ['*.js'],
-                        dest: 'target/js/lib',
+                        dest: 'target/js/vendor',
                         filter: 'isFile'
                     }
                 ],
             },
         },
         jshint: {
-            files: ['gruntfile.js', 'src/js/main.js'],
+            files: ['gruntfile.js', 'src/js/**'],
             options: {
+                ignores: ['src/js/vendor/**'],
                 jshintrc: '.jshintrc',
                 globals: {
                     jQuery: true,
@@ -85,14 +86,14 @@ module.exports = function(grunt) {
                     sourceMap: 'target/main.min.js.map'
                 },
                 files: {
-                    'target/js/main.min.js': ['src/js/main.js'],
+                    'target/js/main.min.js': ['src/js/_mn/*.js', 'src/js/main.js'],
                 }
             }
         },
         cssmin: {
             compress: {
                 files: {
-                    "target/css/main.min.css": ['src/vendor/css/normalize.css', 'src/css/main.css']
+                    "target/css/main.min.css": ['src/css/vendor/normalize.css', 'src/css/main.css']
                 }
             }
         },
@@ -130,7 +131,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-watch');    
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['copy', 'jshint', 'sass', 'uglify', 'postcss', 'cssmin', 'imagemin']);
     grunt.registerTask('server', ['default', 'connect:server:keepalive']);
