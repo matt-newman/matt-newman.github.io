@@ -21,6 +21,16 @@ a:active {
     color: $link-active;
 }
 
+.section {
+    :link {
+        color: darken($link-hover, 30%);
+    }
+
+    :link:hover {
+        color: $link-hover;
+    }
+}
+
 .title {
     color: $title-color;
     margin: 0.75em 0 0.25em 0;
