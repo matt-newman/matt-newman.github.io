@@ -16,7 +16,18 @@
     <dd>
         <a href="https://github.com/matt-newman">https://github.com/matt-newman</a>
     </dd>
+    <dd>
+        <a href="https://github.com/TMG-MattNewman">https://github.com/TMG-MattNewman</a>
+    </dd>
 </dl>
+
+## About me
+
+I’m passionate about web development with a real desire to produce the best outcome possible for both end users and the business I represent. I like to work towards having an optimal process in place so a given team or individual can more easily produce the best work possible, to me lately this means that I like to work on or towards having things like automated deployment and and well scoped pieces of work so that any effort is directed towards solving the right thing!
+
+Throughout my career as a developer I have strived to further my understanding of programs, software and the development process in general by reading material on the concepts and principals of programming (see below), I’ve also spent time studying and discussing best practice for performance, design, structure, function, implementation and testing of websites and pages. I'm particulary keen on trying to make sure the end-user performance of pages is as good as it reasonably can be (fast performance is a never ending goal).
+
+My hobbies include a variety of sports, particularly football, which I spend a lot of free time doing; I really enjoy snowboarding, regardless of my skill level. I used to spend some of my time playing some chess, solving logic puzzles and doing crosswords but I find less time for those things now.
 
 ## Skills Summary
 
@@ -32,6 +43,7 @@ used since 2007
 * SASS used since 2011
 
 I've got an ideal of writing and maintaining clean and efficient CSS. A constant desire to keep up with the ever evolving landscape of CSS as browser standards and adoption evolve, through an evolution from using tables for layout, inline styles and attributes in an email context, to using floats for layout in external stylesheets, shifting towards using flexbox for layout with varying prefix based support. With this I've seen and used a number of different stratagies for authoring CSS, such as a modular pattern for self contained components, to OOCSS and stratagies for addressing different problems such as background and font color inheritence for links etc.
+
 ### Javascript 
 used since 2010
 
@@ -50,9 +62,8 @@ used since 2011
 A good grasp how to use the command line for a variety of tasks, with a familiarity with a few of the vast number of incredibly useful tools available. Obviously more recently using the command line for grunt and task runners to aid automated build tasks and testing.
 
 ### Other notable skills/technologies:
-
 * Windows, Mac, iPhone, Android: used both professionally and personally.
-* Apache: Familiarity with working on (configuring/maintaining) a local Apache instance.
+* Apache: Familiarity with working on (configuring/maintaining) Apache.
 * SVN, Git
 * Regex used intermittently since: <time datetime="2011" class="since-date">2011</span>
 * JSP used rarely since: <time datetime="2011" class="since-date">2011</span>
@@ -63,34 +74,30 @@ A good grasp how to use the command line for a variety of tasks, with a familiar
 * Photoshop: reasonable usage, knowing how to take designs and images and do simplistic editing.
 
 ## Previous Employment
+### Telegraph Media Group
+September 2015 - December 2018
+
+As a Senior Engineer at the Telegraph I played the leading role in cleaning up the implemenation of their templates and renderers used. This has the long term aim of simplyfying nad improving: development, maintanence, testing and performance. This meant understaing the entire breadth of the offering of the Telegraph, its 45 different page types and their implemenation details.
+
+I was part of a small set of people who helped to drastically improve the performance of pages on the Telegraph, taking Speed Index from 12s (5mb/1mb 20ms latency) to 4s. That improvement was achieved incrementally on an old codebase, with the new implementation of templates, that was brought down to less than a second, see: https://www.telegraph.co.uk/health/ 
+
+#### Projects worked on whilst at The Telegraph:
+* Rebuilding lists (lists form more than 60% of the website)
+* New implemenation of front-end build process
+* Adding user-commenting
+* MyTelegraph (following Journalists and Topics)
+* Preformance improvement of website
+* Intregrating with Apple News
+* Launching Travel vertical
+
+#### Technologies used or exposed to:
+* Javascript, HTML, CSS, AEM/CQ, SASS, BASH, Akamai, Node/NPM, React, Jest, Mocha, Chai, Java, Git, Maven, Bamboo, Jenkins, JSP, Apache, curl
+
 ### IG
-From December 2011 - Until: June 2015
+December 2011 - June 2015
                     
 #### Technologies used or exposed to:
-
-* Javascript
-* HTML
-* CSS
-* LESS
-* Jasmine
-* jQuery
-* ExtJS
-* Mocha
-* Chai
-* Sinon
-* CasperJS
-* Grunt
-* Karma
-* CQ
-* Java
-* SVN
-* Maven
-* Bamboo
-* Jenkins
-* JSP
-* Apache
-* Node
-* curl
+* Javascript, HTML, CSS, LESS, Jasmine, jQuery, ExtJS, Mocha, Chai, Sinon, CasperJS, Grunt, Karma, CQ, Java, SVN, Maven, Bamboo, Jenkins, JSP, Apache, Node/NPM, curl
 
 #### Projects worked on whilst at IG:
 #### Building IG.com
@@ -104,24 +111,10 @@ In order to comply with Google’s ‘mobile-friendly’ directives we establish
 In order to address a potential https exploit on an Akamai Edge server we had to work with several teams to implement a version of the password reset functionality that added another layer of encryption to the password being submitted. This work was also designed to follow the principals of graceful degradation and progressive enhancement.
 
 ### First*Clarity
-From June 2010 - Until: December 2011
+June 2010 - December 2011
                  
 #### Technologies used or exposed to:
-
-* Javascript
-* HTML
-* CSS
-* Jasmine
-* jQuery
-* Drupal
-* Magento
-* Selenium
-* Java
-* SVN
-* Maven
-* Jenkins
-* JSP
-* Apache
+* Javascript, HTML, CSS, Jasmine, jQuery, Drupal, Magento, Selenium, Java, SVN, Maven, Jenkins, JSP, Apache
 
 Starting as a UI developer, I worked on a custom built CMS to support European Directories. I worked on several projects whilst at First Clarity and had a lot of client interaction and client facing work. Primarily working with HTML, CSS, Javascript. I gained and expertise in SVN and also started working more on the command line and also with Java, Maven, Jenkins and started experimenting with unit and functional testing of the front-end.
 
@@ -129,46 +122,38 @@ I also did some wire-framing, documentation for both clients and internal use. I
 I became a team lead and with one of the other Senior UIs and together we led a team of up to 20 front-end developers and ran lunchtime sessions to help others learn some of the fundamental principals that would allow them to solve any problem in the best way possible.
 
 ### Collective Colour
-From November 2008 - Until: May 2010
+November 2008 - May 2010
                 
 Brought in to extend the service offerings provided by Collective. I took the lead on a variety of technical endeavours that were already undertaken by Collective, such as: a Web-to-Print Management System and Photobook-Software (built by a 3rd party which Collective created and administered products).
 
 As the only developer there I was responsible for the setup of my working environment and the estimation of all quotes on any tenders or bids involving development work. I was also responsible for all interaction with clients regarding the development of their site including doing things like needs analysis and requirements scoping.
 
 ### Netizen Digital
-From February 2007 - Until: October 2008
+February 2007 - October 2008
                 
 Starting as a junior working mainly on support I quickly became a part of the delivery team and gained exposure to the entire project life cycle. In early 2008 I was tasked with creating guidelines for the best practices for site ‘cut-up’ as I was then one of the primary people within the company for front-end development. Whilst at Netizen I gained many invaluable skills and frequently sort to learn from the highly experienced senior developers.
 
 ### Freelance Web Developer
-From November 2004 - Until: December 2006
+November 2004 - December 2006
                 
 Built sites for a local golf clubs, features included a news board and a diary, maintained by office staff who had little or no experience of maintaining a site. Designed to allow them to easily post news and update the schedule. Sites received praise from members and visitors. For one club site visits increased from 15 to 150 a day.
 
 ### Netergy
-From July 2004 - Until: September 2004
+July 2004 - September 2004
                 
 Introduced to IDEs such as Adobe Go-live and also graphics programs such as Photoshop. First exposure to PHP and web development.
 
 ### AC Appointments
-From Sep 2003 - Until: March 2004
+Sep 2003 - March 2004
                 
 Technical Data Logging for FLS.
 
 ### Avery Associates
-From Nov 2001 - Until: March 2002
+Nov 2001 - March 2002
             
 Sales Rep and product demonstrator for Epson Printers in DSG.
 
 ### Avery Associates
-From August 2001 - Until: September 2001
+August 2001 - September 2001
             
 Sales Rep for Packard Bell computers in DSG.
-
-## General Information
-
-I’m passionate about web development with a real desire to do the best job that I can and produce something that I can be proud of. I like to work towards having an optimal process in place so a given team or individual can more easily do the best work possible, to me lately this means that I like to work on or towards having things like automated deployment and and well scoped pieces of work so that any effort is directed towards solving the right thing!
-
-Throughout my career as a developer I have strived to further my understanding of programs, software and the development process in general by reading material on the concepts and principals of programming (see below), I’ve also spent time studying and discussing best practice for web page design, structure, function and implementation.
-
-My hobbies include a variety of sports, particularly football, which I spend a lot of free time doing, as I play for a few different teams. I’m also really enthusiastic about snowboarding even if I’m not that good. I used to spend some of my time playing some chess, solving logic puzzles and doing crosswords but I find less time for those things now.
