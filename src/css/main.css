@@ -1,11 +1,11 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 .group:before,
@@ -165,7 +165,7 @@ a:active {
 }
 
 .start-date:after {
-  content: '-';
+  content: "-";
   padding-left: 0.3em;
 }
 
@@ -188,11 +188,11 @@ a:active {
   .long-list li {
     -ms-flex: 0 28%;
         flex: 0 28%;
-    padding: .25em 1em .25em 0;
+    padding: 0.25em 1em 0.25em 0;
   }
 
   .long-list.technologies > li:not(:last-child)::after {
-    content: '';
+    content: "";
     margin: auto;
   }
 
@@ -236,11 +236,11 @@ a:active {
 
   .two-column > .col {
     float: left;
-    max-width: 50%;
+    width: 50%;
     padding-right: 1em;
   }
 
-  .two-column > .col:nth-child(2n + 1) {
+  .two-column > .col:nth-child(2n+1) {
     float: right;
     padding-right: 0;
     padding-left: 1em;

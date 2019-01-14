@@ -5,7 +5,7 @@
     .columns {}
     .two-column > .col {
         float: left;
-        max-width: 50%;
+        width: 50%;
         padding-right: 1em;
     }
     .two-column > .col:nth-child(2n + 1) {
