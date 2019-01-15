@@ -13,7 +13,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        sh 'grunt'
+        sh 'npm run build'
       }
     }
   }
