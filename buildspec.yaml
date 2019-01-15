@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+    build:
+      - npm run build
+artifacts:
+  files:
+    - target
+    - index.html
+cache:
+  paths:
+    - '/node_modules/'
