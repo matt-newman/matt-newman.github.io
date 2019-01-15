@@ -8,19 +8,6 @@ html {
   box-sizing: border-box;
 }
 
-.group:before,
-.group:after,
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.group:after,
-.clearfix:after {
-  clear: both;
-}
-
 .desktop-only {
   display: none;
 }
@@ -41,15 +28,35 @@ p, ul, ol, dl {
   padding: 1em;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 2em;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.col {
+  -ms-grid-column: span 12;
+      grid-column: span 12;
+}
+
+.span-6 {
+  -ms-grid-column: span 6;
+      grid-column: span 6;
+}
+
 body {
-  color: #444;
-  background-color: #70c1b3;
+  color: #aaa;
+  background-color: #222;
   font-size: 0.9em;
   line-height: 1.5;
 }
 
 :link {
-  color: #247ba0;
+  color: #9cc;
 }
 
 :visited {
@@ -57,7 +64,7 @@ body {
 }
 
 a:hover {
-  color: #cfe9f4;
+  color: #d2e1e3;
 }
 
 a:active {
@@ -65,19 +72,19 @@ a:active {
 }
 
 .section :link {
-  color: #52b0d8;
+  color: #75a1a7;
 }
 .section :link:hover {
-  color: #cfe9f4;
+  color: #d2e1e3;
 }
 
 .title {
-  color: #ffe066;
+  color: #C5C9A4;
   margin: 0.75em 0 0.25em 0;
 }
 
 .title-main {
-  color: #f25f5c;
+  color: #C5C9A4;
   text-align: center;
   margin-top: 0;
 }
@@ -89,8 +96,8 @@ a:active {
 .section {
   margin: 1em 0;
   border-radius: 1em;
-  background-color: #50514f;
-  color: #ffffc7;
+  background-color: #444;
+  color: #aaa;
   padding: 0.5em 1em 1em;
 }
 
@@ -124,7 +131,7 @@ a:active {
 }
 
 .since {
-  color: #f25f5c;
+  color: #7EB09B;
   font-size: 0.75em;
   font-weight: normal;
 }
@@ -149,7 +156,7 @@ a:active {
 }
 
 .job {
-  border-bottom: #6a6b68 solid 0.2em;
+  border-bottom: #5e5e5e solid 0.2em;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
@@ -159,7 +166,7 @@ a:active {
 
 .employment-date {
   display: block;
-  color: #f25f5c;
+  color: #7EB09B;
   font-size: 0.75em;
   padding-top: 0.5em;
 }
@@ -232,23 +239,6 @@ a:active {
 @media screen and (min-width: 52em) {
   .desktop-only {
     display: block;
-  }
-
-  .two-column > .col {
-    float: left;
-    width: 50%;
-    padding-right: 1em;
-  }
-
-  .two-column > .col:nth-child(2n+1) {
-    float: right;
-    padding-right: 0;
-    padding-left: 1em;
-  }
-
-  .columns .full-width {
-    clear: both;
-    max-width: 100%;
   }
 
   .technologies li {

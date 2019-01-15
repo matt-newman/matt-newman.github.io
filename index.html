@@ -6,10 +6,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Matt Newman - CV</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="target/css/main.min.css" /></head>
-    <script type="text/javascript" src="./target/js/main.min.js" async></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,IntersectionObserver&amp;callback=tmg.polyfill.complete" defer=""></script>
+    <script type="text/javascript" src="./target/js/main.min.js" async defer></script>
 <body>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -41,8 +42,8 @@
                 </dl>
             </div>
         </header>
-        <section class="section columns two-column skills-wrapper group">
-            <h2 class="title title-section">Skills Summary</h2>
+        <section class="section grid skills-wrapper group">
+            <h2 class="title title-section col">Skills Summary</h2>
             <div class="skill col">
                 <h3 class="title">HTML <span class="since">used since <time datetime="2008" class="since-date">2007</time></span></h3>
                 <p>Semantic coding to W3C standards, I have an appreciation for using the best possible base in terms of markup as it makes everything else flow more smoothly. To me this means trying to follow best practices such as graceful degradation or progressive enhancement whilst building as much as possible using what is available via native APIs.</p>
@@ -83,7 +84,7 @@
                 <h3 class="title">Command Line <span class="since">used since <time datetime="2011" class="since-date">2011</time></span></h3>
                 <p>A good grasp how to use the command line for a variety of tasks, with a familiarity with a few of the vast number of incredibly useful tools available. Obviously more recently using the command line for grunt and task runners to aid automated build tasks and testing.</p>
             </div>
-            <div class="skill col full-width other-skills">
+            <div class="skill col other-skills">
                 <h3 class="title">Other notable skills/technologies:</h3>
                 <ul class="skills list long-list">
                     <li>Windows, Mac, iPhone, Android: used both professionally and personally.</li>
@@ -140,36 +141,36 @@
                 <div class="job-description">
                     <h4 class="title">Projects worked on whilst at The Telegraph:</h4>
                 </div>
-                <div class="group columns two-column projects">
-                    <div class="project col">
+                <div class="group grid projects">
+                    <div class="project col span-6">
                         <h4 class="title">Rebuilding lists</h4>
-                        <p>lists form more than 60% of the website</p>
+                        <p>lists form more than 60% of the telegraph website. The first step constituted replacing 6500 topic pages</p>
                     </div>
-                    <div class="project col">
+                    <div class="project col span-6">
                         <h4 class="title">Front-end build process</h4>
-                        <p>Improving build and iteration time</p>
+                        <p>Improving build and iteration time for front-end development on the AEM platform</p>
                     </div>
-                    <div class="project col">
+                    <div class="project col span-6">
                         <h4 class="title">CSS and JS linting for TMG</h4>
                         <p>To help consistency of development approach and standards</p>
                     </div>
-                    <div class="project col">
+                    <div class="project col span-6">
                         <h4 class="title">Adding user-commenting</h4>
                         <p>Integration with 3rd Party commenting system Livefyre</p>
                     </div>
-                    <div class="project col">
+                    <div class="project col span-6">
                         <h4 class="title">MyTelegraph</h4>
                         <p>Allowing registered users to follow Journalists and Topics</p>
                     </div>
-                    <div class="project col">
+                    <div class="project col span-6">
                         <h4 class="title">Performance improvements</h4>
                         <p>Improving page load performance across the site</p>
                     </div>
-                    <div class="project col">
+                    <div class="project col span-6">
                         <h4 class="title">Apple News Integration</h4>
                         <p>Allowing telegraph news (open and premium) to be read on AppleNews</p>
                     </div>
-                    <div class="project col">
+                    <div class="project col span-6">
                         <h4 class="title">Launching Travel vertical</h4>
                         <p>Bring the Travel section's 3rd party parts onto the telegraph.co.uk domain</p>
                     </div>
@@ -214,7 +215,7 @@
                 <div class="job-description">
                     <h4 class="title">Projects worked on whilst at IG:</h4>
                 </div>
-                <div class="group columns two-column projects">
+                <div class="group grid two-column projects">
                     <div class="project col">
                         <h4 class="title">Building <a href="http://IG.com">IG.com</a></h4>
                         <p>Consolidating IG’s multiple websites (12 – one per country) down to just <a href="http://ig.com">ig.com</a>. This involved moving from a custom internal CMS to Adobe’s CQ CMS (now AEM). It posed a number of design and SEO challenges that had to be solved as well.</p>

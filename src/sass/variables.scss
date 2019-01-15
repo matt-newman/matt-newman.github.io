@@ -3,31 +3,32 @@
 //628395-96897b-dbad6a-cf995f-d0ce7c
 //9dd592-a4c687-9eb357-966f2f-48352c
 //50514f-f25f5c-ffe066-247ba0-70c1b3
+//476A6F 519E8A 7EB09B C5C9A4 ECBEB4
 
-$color1: #70c1b3;
-$color2: #50514f;
-$color3: #ffe066;
-$color4: #f25f5c;
-$color5: #247ba0;
+$color1: #519E8A;
+$color2: #7EB09B;
+$color3: #476A6F;
+$color4: #C5C9A4;
+$color5: #ECBEB4;
 
 $beige: #ffffc7;
 $grey:  #444;
 
-$link:                  $color5; //#276fbf; // brightish blue
+$link:                  #9cc; //#276fbf; // brightish blue
 $link-visited:          lighten(#564256, 30%); // dark purple
-$link-hover:            lighten($color5, 50%); //#183059; // dark blue 
+$link-hover:            lighten($color3, 50%); //#183059; // dark blue 
 $link-active:           #f03a47; // reddish
 
-$site-bg-color:         $color1;
-$font-color:            $grey;
+$site-bg-color:         #222;
+$font-color:            #aaa;
 $site-title-color:      $color4;
-$title-color:           $color3;
+$title-color:           $color4;
 
-$section-bg-color:      $color2;
-$section-color:         $beige;
-$section-title-color:   $color3;
+$section-bg-color:      #444;
+$section-color:         #aaa;
+$section-title-color:   $color4;
 
-$since-color:           $color4;
-$employment-date-color: $color4;
+$since-color:           $color2;
+$employment-date-color: $color2;
 
 $job-border-color:      lighten($section-bg-color, 10%);

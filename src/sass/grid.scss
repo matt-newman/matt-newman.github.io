@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+.col {
+    grid-column: span 12;
+}
+.span-6 {
+    grid-column: span 6;
+}

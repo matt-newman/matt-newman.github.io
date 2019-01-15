@@ -2,21 +2,6 @@
     .desktop-only {
         display: block;
     }
-    .columns {}
-    .two-column > .col {
-        float: left;
-        width: 50%;
-        padding-right: 1em;
-    }
-    .two-column > .col:nth-child(2n + 1) {
-        float: right;
-        padding-right: 0;
-        padding-left: 1em;
-    }
-    .columns .full-width {
-        clear: both;
-        max-width: 100%;
-    }
     .technologies li {
         flex: 0 14%;        
     }
