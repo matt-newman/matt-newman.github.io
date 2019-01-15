@@ -14,5 +14,9 @@
     "grunt-contrib-watch": "~0.x",
     "grunt-postcss": "^0.6.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "build": "grunt"
+  },
+  "test": "echo 'no test setup'"
 }
