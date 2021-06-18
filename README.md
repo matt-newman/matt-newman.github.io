@@ -23,7 +23,7 @@
 
 ## About me
 
-I’m passionate about web development with a real desire to produce the best outcome possible for both end users and the business I represent. I like to work towards having an optimal process in place so a given team or individual can more easily produce the best work possible, to me lately this means that I like to work on or towards having things like automated deployment and and well scoped pieces of work so that any effort is directed towards solving the right thing!
+I’m passionate about web development with a real desire to produce the best outcome possible for both end users and the business I represent. I like to work towards having an optimal process in place so a given team or individual can more easily produce the best work we're capable of, to me lately this means that I like to have things like automated deployment, solid and suitable testing and and well scoped pieces of work so that any effort is directed towards solving the right thing!
 
 Throughout my career as a developer I have strived to further my understanding of programs, software and the development process in general by reading material on the concepts and principals of programming (see below), I've also spent time studying and discussing best practice for performance, design, structure, function, implementation and testing of websites and pages. I'm particularly keen on trying to make sure the end-user performance of pages is as good as it reasonably can be (fast performance is a never ending goal).
 
@@ -31,21 +31,15 @@ My hobbies include a variety of sports, particularly football, which I spend a l
 
 ## Skills Summary
 
-### HTML 
-used since 2007
+### HTML - since 2007
 
 Semantic coding to W3C standards, I have an appreciation for using the best possible base in terms of markup as it makes everything else flow more smoothly. To me this means trying to follow best practices such as graceful degradation or progressive enhancement whilst building as much as possible using what is available via native APIs.
 
-### CSS 
-used since 2007
-
-* LESS used since 2012
-* SASS used since 2011
+### CSS - since 2007
 
 I've got an ideal of writing and maintaining clean and efficient CSS. A constant desire to keep up with the ever evolving landscape of CSS as browser standards and adoption evolve, through an evolution from using tables for layout, inline styles and attributes in an email context, to using floats for layout in external stylesheets, shifting towards using flexbox for layout with varying prefix based support. With this I've seen and used a number of different strategies for authoring CSS, such as a modular pattern for self contained components, to OOCSS and strategies for addressing different problems such as background and font color inheritance for links etc.
 
-### Javascript 
-used since 2010
+### Javascript - since 2010
 
 * jQuery used since 2010
 * Jasmine, Mocha, Chai, Karma used since 2013
@@ -56,8 +50,7 @@ used since 2010
 
 Solid understanding of code and ways to try and keep code clean and testable. Decent understanding of various design patterns. Lately where possible I’d try and opt for micro-libraries and browser native support for a lot of interaction with the DOM. I’ve obviously used jQuery, written a couple of custom node scripts, written a number of unit tests for key functionality mostly using Jasmine. Written and maintained CasperJS functional tests.
 
-### Command Line 
-used since 2011
+### Command Line - since 2011
 
 A good grasp how to use the command line for a variety of tasks, with a familiarity with a few of the vast number of incredibly useful tools available. Obviously more recently using the command line for grunt and task runners to aid automated build tasks and testing.
 
@@ -65,15 +58,21 @@ A good grasp how to use the command line for a variety of tasks, with a familiar
 * Windows, Mac, iPhone, Android: used both professionally and personally.
 * Apache: Familiarity with working on (configuring/maintaining) Apache.
 * SVN, Git
-* Regex used intermittently since: <time datetime="2011" class="since-date">2011</span>
-* JSP used rarely since: <time datetime="2011" class="since-date">2011</span>
-* XML, XSLT used rarely since: <time datetime="2009" class="since-date">2009</span>
+* Regex used intermittently since <time datetime="2011" class="since-date">2011</span>
+* JSP used rarely since <time datetime="2011" class="since-date">2011</span>
+* XML, XSLT used rarely since <time datetime="2009" class="since-date">2009</span>
 * SQL: a solid grasp of writing queries with some exposure to performance tuning and optimizations for queries. Understanding of relational database design and n-tier normalization.
 * PHP, C#, Java: varied or limited experience/exposure having worked on a number of different projects that may have used these programming languages.
 * MongoDB: limited knowledge/exposure but took an online course in order to get some experience.
 * Photoshop: reasonable usage, knowing how to take designs and images and do simplistic editing.
 
 ## Previous Employment
+
+### News UK
+March 2019 - March 2020
+
+I worked as part of the Commercial Engineering team, we overhauled/replaced the existing Admanager integration, achieving a 3-fold increase in ad-revenue on https/www.thesun.co.uk/ . Whilst there I also helped the core sun and times teams do some performance optimization work.
+
 ### Telegraph Media Group
 September 2015 - December 2018
 
