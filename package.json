@@ -2,11 +2,13 @@
   "name": "matt-newman-cv",
   "version": "0.1.0",
   "devDependencies": {
-    "autoprefixer": "^9.8.6"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "scripts": {
-    "build": ""
+    "build": "JEKYLL_ENV=production jekyll build",
+    "dev": "jekyll serve --livereload",
+    "server": "jekyll serve"
   },
   "test": "echo 'no test setup'"
 }

@@ -1,408 +1,64 @@
-<!doctype html>
-<html class="no-js" lang="">
+---
+layout: default
+title: Matt Newman - CV
+---
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Matt Newman - CV</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="target/css/main.min.css" /></head>
-    <script type="text/javascript" src="./target/js/main.min.js" async defer></script>
-<body>
+{% include header.html %}
 
-    <div class="site-wrapper">
-        <header class="header group contact">
-            <h1 class="title title-main">Matt Newman - CV</h1>
-            <div class="contact-details group">
-                <dl>
-                    <dt>Email:</dt>
-                    <dd>
-                        <a href="mailto:cv@mattnewman.me?subject=Contact via Online CV">cv@mattnewman.me</a>
-                    </dd>
-                    <dt>DoB:</dt>
-                    <dd>27th January 1983</dd>
-                    <dt>Nationality:</dt>
-                    <dd>British</dd>
-                    <dt>LinkedIn:</dt>
-                    <dd>
-                        <a href="https://linkedin.com/in/mattnewman83">https://linkedin.com/in/mattnewman83</a>
-                    </dd>
-                    <dt>GitHub:</dt>
-                    <dd>
-                        <a href="https://github.com/matt-newman">https://github.com/matt-newman</a>
-                    </dd>
-                    <dd>
-                        <a href="https://github.com/TMG-MattNewman">https://github.com/TMG-MattNewman</a>
-                    </dd>
-                </dl>
-            </div>
-        </header>
+{% include contact.html %}
 
-        <section class="section group about-me">
-            <h2 class="title title-section">A brief intro</h2>
-            <p>I strive for optimal solutions to problems, so I try to temper my natural inclination for optimal programming solutions with an understanding and pragmatism for business requirements and drivers.</p>
-            <p>I enjoy solving problems generally and working with a team to do things to the best of our ability, producing results for the whole, that are better than an individual.</p>
-            <p>I like learning new things, but the older I get I also appreciate the ability (for all) to perform well using established skills.</p>
-        </section>
-        
-        <section class="section group previous-jobs">
-            <h2 class="title title-section">Previous Employment</h2>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">News UK</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2019-03">March 2019</time>
-                        <time class="end-date" datetime="2020-03">March 2020</time>
-                    </span>
-                </h3>
-                <div class="overview">
-                    <p>I worked as part of the Commercial Engineering team, we overhauled/replaced the existing Admanager integration, achieving a 3-fold increase in ad-revenue on <a href="https://www.thesun.co.uk/">https://www.thesun.co.uk/</a>.</p>
-                    <p>Whilst there I also helped the core Sun and Times teams do some performance optimization improvements.</p>
-                    <p>I setup the pipeline build for the Commercial Engineering team, using CircleCI (with npm/bash commands) to bring it in line with the wider NewsUK platform usage.</p>
-                </div>
-                <div class="technologies">
-                    <h4 class="title">Technologies used or exposed to:</h4>
-                    <ul class="list technologies long-list">
-                        <li>Typescript</li>
-                        <li>React</li>
-                        <li>Javascript</li>
-                        <li>Prebid</li>
-                        <li>Wordpress</li>
-                        <li>CirceCI</li>
-                        <li>Jest</li>
-                        <li>Cypress</li>
-                        <li>Node/NPM</li>
-                    </ul>
-                </div>
-                <div class="job-description">
-                    <h4 class="title">Projects worked on:</h4>
-                </div>
-                <div class="group grid projects">
-                    <div class="project col span-6">
-                        <h4 class="title">Replace existing Admanager/Prebid integration</h4>
-                        <p>This forms the mechanism by which The Sun (and later all NewsUK sites), have their ads delivered/displayed, so is absolutely cruical as it forms a major part of their revenue strategy.</p>
-                    </div>
-                    <div class="project col span-6">
-                        <h4 class="title">Deployment pipeline</h4>
-                        <p>As we worked on a new system, it made sense to replace the existing (difficult and multi-step) process with one that was easy, reliable and consistent.</p>
-                    </div>
-                    <div class="project col span-6">
-                        <h4 class="title">Sun & Times Performance improvements</h4>
-                        <p>Due to personal interest as well as experience in this domain, I was able to help the core web teams review, plan and enact a number of improvements.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">Telegraph Media Group</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2015-09">September 2015</time>
-                        <time class="end-date" datetime="2018-12">December 2018</time>
-                    </span>
-                </h3>
-                <div class="overview">
-                    <p>As a Senior Engineer at the Telegraph I played the leading role in cleaning up the implementation of their templates and renderers used. This has the long term aim of simplifying and improving: development, maintenance, testing and performance. This meant understanding the entire breadth of the offering of the Telegraph, its 45 different page types and their implementation details.</p>
-                    <p>I was part of a small set of people who helped to drastically improve the performance of pages on the Telegraph, taking Speed Index from 12s (5mb/1mb 20ms latency) to 4s. That improvement was achieved incrementally on an old codebase, with the new implementation of templates, that was brought down to less than 2 seconds, see: https://www.telegraph.co.uk/health/ the overall performance measure was changed to leverage lighthouse reports.</p>
-                </div>
-                <div class="technologies">
-                    <h4 class="title">Technologies used or exposed to:</h4>
-                    <ul class="list technologies long-list">
-                        <li>AEM/CQ</li>
-                        <li>Git</li>
-                        <li>Javascript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SASS</li>
-                        <li>BASH</li>
-                        <li>Jest</li>
-                        <li>Node/NPM</li>
-                        <li>Akamai</li>
-                        <li>React</li>
-                        <li>Mocha</li>
-                        <li>BackstopJS</li>
-                        <li>Java</li>
-                        <li>Jenkins</li>
-                        <li>Apache</li>
-                        <li>AWS</li>
-                        <li>curl</li>
-                    </ul>
-                </div>
-                <div class="job-description">
-                    <h4 class="title">Projects worked on whilst at The Telegraph:</h4>
-                </div>
-                <div class="group grid projects">
-                    <div class="project col span-6">
-                        <h4 class="title">Rebuilding lists</h4>
-                        <p>lists form more than 60% of the telegraph website. The first step constituted replacing 6500 topic pages</p>
-                    </div>
-                    <div class="project col span-6">
-                        <h4 class="title">Front-end build process</h4>
-                        <p>Improving build and iteration time for front-end development on the AEM platform</p>
-                    </div>
-                    <div class="project col span-6">
-                        <h4 class="title">CSS and JS linting for TMG</h4>
-                        <p>To help consistency of development approach and standards</p>
-                    </div>
-                    <div class="project col span-6">
-                        <h4 class="title">Adding user-commenting</h4>
-                        <p>Integration with 3rd Party commenting system Livefyre</p>
-                    </div>
-                    <div class="project col span-6">
-                        <h4 class="title">MyTelegraph</h4>
-                        <p>Allowing registered users to follow Journalists and Topics</p>
-                    </div>
-                    <div class="project col span-6">
-                        <h4 class="title">Performance improvements</h4>
-                        <p>Improving page load performance across the site</p>
-                    </div>
-                    <div class="project col span-6">
-                        <h4 class="title">Apple News Integration</h4>
-                        <p>Allowing telegraph news (open and premium) to be read on AppleNews</p>
-                    </div>
-                    <div class="project col span-6">
-                        <h4 class="title">Launching Travel vertical</h4>
-                        <p>Bring the Travel section's 3rd party parts onto the telegraph.co.uk domain</p>
-                    </div>
-                </div>
-            </div>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">IG</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2011-12">December 2011</time>
-                        <time class="end-date" datetime="2015-06">June 2015</time>
-                    </span>
-                    </h3>
-                <div class="technologies">
-                    <h4 class="title">Technologies used or exposed to:</h4>
-                    <ul class="list technologies long-list">
-                        <li>Javascript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>LESS</li>
-                        <li>Jasmine</li>
-                        <li>jQuery</li>
-                        <li>ExtJS</li>
-                        <li>Mocha</li>
-                        <li>Chai</li>
-                        <li>Sinon</li>
-                        <li>CasperJS</li>
-                        <li>Grunt</li>
-                        <li>Karma</li>
-                        <li>CQ</li>
-                        <li>Java</li>
-                        <li>SVN</li>
-                        <li>Maven</li>
-                        <li>Bamboo</li>
-                        <li>Jenkins</li>
-                        <li>JSP</li>
-                        <li>Apache</li>
-                        <li>Node</li>
-                        <li>curl</li>
-                    </ul>
-                </div>
-                <div class="job-description">
-                    <h4 class="title">Projects worked on whilst at IG:</h4>
-                </div>
-                <div class="group grid two-column projects">
-                    <div class="project col">
-                        <h4 class="title">Building <a href="http://IG.com">IG.com</a></h4>
-                        <p>Consolidating IG’s multiple websites (12 – one per country) down to just <a href="http://ig.com">ig.com</a>. This involved moving from a custom internal CMS to Adobe’s CQ CMS (now AEM). It posed a number of design and SEO challenges that had to be solved as well.</p>
-                    </div>
-                    <div class="project col">
-                        <h4 class="title">Improving the deployment process:</h4>
-                        <p>The objective was to move from a 4 week release cycle down to 2 weeks, which involved introducing unit tests and functional testing as well as a script to run for the deploy process itself. I introduced and trained the team in writing and using unit and functional tests.</p>
-                    </div>
-                    <div class="project col">
-                        <h4 class="title">Making <a href="http://www.ig.com/">IG.com</a> responsive:</h4>
-                        <p>In order to comply with Google’s ‘mobile-friendly’ directives we established a number of best practices for the content teams to follow and tweaked components to make them work across as many devices as possible.</p>
-                    </div>
-                    <div class="project col">
-                        <h4 class="title">Stronger Encryption:</h4>
-                        <p>In order to address a potential https exploit on an Akamai Edge server we had to work with several teams to implement a version of the password reset functionality that added another layer of encryption to the password being submitted. This work was also designed to follow the principals of graceful degradation and progressive enhancement.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">First*Clarity</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2010-06">June 2010</time>
-                        <time class="end-date" datetime="2011-12">December 2011</time>
-                    </span>
-                 </h3>
+{% include about.html %}
 
-                <div class="technologies">
-                    <h4 class="title">Technologies used or exposed to:</h4>
-                    <ul class="list technologies long-list">
-                        <li>Javascript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Jasmine</li>
-                        <li>jQuery</li>
-                        <li>Drupal</li>
-                        <li>Magento</li>
-                        <li>Selenium</li>
-                        <li>Java</li>
-                        <li>SVN</li>
-                        <li>Maven</li>
-                        <li>Jenkins</li>
-                        <li>JSP</li>
-                        <li>Apache</li>
-                    </ul>
-                </div>
-                <div class="job-description">
-                    <p>Starting as a UI developer, I worked on a custom built CMS to support European Directories. I worked on several projects whilst at First Clarity and had a lot of client interaction and client facing work. Primarily working with HTML, CSS, Javascript. I gained and expertise in SVN and also started working more on the command line and also with Java, Maven, Jenkins and started experimenting with unit and functional testing of the front-end.</p>
-                    <p>I also did some wire-framing, documentation for both clients and internal use. I also did performance testing (front-end).</p>
-                    <p>I became a team lead and with one of the other Senior UIs and together we led a team of up to 20 front-end developers and ran lunchtime sessions to help others learn some of the fundamental principals that would allow them to solve any problem in the best way possible.</p>
-                </div>
-            </div>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">Collective Colour</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2008-11">November 2008</time>
-                        <time class="end-date" datetime="2010-05">May 2010</time>
-                    </span>
-                </h3>
-                <div class="job-description">
-                    <p>Brought in to extend the service offerings provided by Collective. I took the lead on a variety of technical endeavours that were already undertaken by Collective, such as: a Web-to-Print Management System and Photobook-Software (built by a 3rd party which Collective created and administered products).</p>
-                    <p>As the only developer there I was responsible for the setup of my working environment and the estimation of all quotes on any tenders or bids involving development work. I was also responsible for all interaction with clients regarding the development of their site including doing things like needs analysis and requirements scoping.</p>
-                </div>
-            </div>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">Netizen Digital</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2007-02">February 2007</time>
-                        <time class="end-date" datetime="2008-10">October 2008</time>
-                    </span>
-                </h3>
-                <div class="job-description">
-                    <p>Starting as a junior working mainly on support I quickly became a part of the delivery team and gained exposure to the entire project life cycle. In early 2008 I was tasked with creating guidelines for the best practices for site ‘cut-up’ as I was then one of the primary people within the company for front-end development. Whilst at Netizen I gained many invaluable skills and frequently sort to learn from the highly experienced senior developers.</p>
-                </div>
-            </div>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">Freelance Web Developer</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2004-11">November 2004</time>
-                        <time class="end-date" datetime="2006-12">December 2006</time>
-                    </span>
-                </h3>
-                <div class="job-description">
-                    <p>Built sites for a local golf clubs, features included a news board and a diary, maintained by office staff who had little or no experience of maintaining a site. Designed to allow them to easily post news and update the schedule. Sites received praise from members and visitors. For one club site visits increased from 15 to 150 a day.
-                </div>
-            </div>
-            <div class="job">
-                <h3 class="title"><span class="company">Netergy</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2004-07">July 2004</time>
-                        <time class="end-date" datetime="2004-09">September 2004</time>
-                    </span>
-                </h3>
-                <p>Introduced to IDEs such as Adobe Go-live and also graphics programs such as Photoshop. First exposure to PHP and web development.</p>
-            </div>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">AC Appointments</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2003-09">Sep 2003</time>
-                        <time class="end-date" datetime="2004-03">March 2004</time>
-                    </span>
-                </h3>
-                <p>Technical Data Logging for FLS.</p>
-            </div>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">Avery Associates</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2001-11">Nov 2001</time>
-                        <time class="end-date" datetime="2002-03">March 2002</time>
-                    </span>
-                </h3>
-                <p>Sales Rep and product demonstrator for Epson Printers in DSG.</p>
-            </div>
-            <div class="job">
-                <h3 class="title">
-                    <span class="company">Avery Associates</span>
-                    <span class="employment-date">
-                        <time class="start-date" datetime="2001-08">August 2001</time>
-                        <time class="end-date" datetime="2001-09">September 2001</time>
-                    </span>
-                </h3>
-                <p>Sales Rep for Packard Bell computers in DSG.</p>
-            </div>
-        </section>
+<section class="section group previous-jobs">
+    <h2 class="title title-section">Previous Employment</h2>
 
-        <section class="section grid skills-wrapper group">
-            <h2 class="title title-section col">Skills Summary</h2>
-            <div class="skill col">
-                <h3 class="title">HTML <span class="since">used since <time datetime="2008" class="since-date">2007</time></span></h3>
-                <p>Semantic coding to W3C standards, I have an appreciation for using the best possible base in terms of markup as it makes everything else flow more smoothly. To me this means trying to follow best practices such as graceful degradation or progressive enhancement whilst building as much as possible using what is available via native APIs.</p>
-            </div>
-            <div class="skill col">
-                <h3 class="title">CSS <span class="since">used since <time datetime="2008" class="since-date">2007</time></span></h3>
-                <ul class="list technologies">
-                    <li class="technology">LESS <span class="since">used since <time datetime="2012" class="since-date">2012</time></span></li>
-                    <li class="technology">SASS <span class="since">used since <time datetime="2011" class="since-date">2011</time></span></li>
-                </ul>
-                <p>I've got an ideal of writing and maintaining clean and efficient CSS. A constant desire to keep up with the ever evolving landscape of CSS as browser standards and adoption evolve, through an evolution from using tables for layout, inline styles and attributes in an email context, to using floats for layout in external stylesheets, shifting towards using flexbox for layout with varying prefix based support. With this I've seen and used a number of different strategies for authoring CSS, such as a modular pattern for self contained components, to OOCSS and strategies for addressing different problems such as background and font colour inheritance for links etc.</p>
-            </div>
-            <div class="skill col">
-                <h3 class="title">Javascript <span class="since">used since <time datetime="2010" class="since-date">2010</time></span></h3>
-                <ul class="list technologies">
-                    <li class="technology">jQuery
-                        <span class="since">used since <time datetime="2010" class="since-date">2010</time></span>
-                    </li>
-                    <li class="technology">Jasmine, Mocha, Chai, Karma
-                        <span class="since">used since <time datetime="2013" class="since-date">2013</time></span>
-                    </li>
-                    <li class="technology">Mustache
-                        <span class="since">used since <time datetime="2014" class="since-date">2014</time></span>
-                    </li>
-                    <li class="technology">CasperJS
-                        <span class="since">used since <time datetime="2013" class="since-date">2013</time></span>
-                    </li>
-                    <li class="technology">NodeJS, npm
-                        <span class="since">used since <time datetime="2014" class="since-date">2014</time></span>
-                    </li>
-                    <li class="technology">Grunt
-                        <span class="since">used since <time datetime="2014" class="since-date">2014</time></span>
-                    </li>
-                </ul>
-                <p>Solid understanding of code and ways to try and keep code clean and testable. Decent understanding of various design patterns. Lately where possible I’d try and opt for micro-libraries and browser native support for a lot of interaction with the DOM. I’ve obviously used jQuery, written a couple of custom node scripts, written a number of unit tests for key functionality mostly using Jasmine. Written and maintained CasperJS functional tests.</p>
-            </div>
-            <div class="skill col">
-                <h3 class="title">Command Line <span class="since">used since <time datetime="2011" class="since-date">2011</time></span></h3>
-                <p>A good grasp how to use the command line for a variety of tasks, with a familiarity with a few of the vast number of incredibly useful tools available. Obviously more recently using the command line for grunt and task runners to aid automated build tasks and testing.</p>
-            </div>
-            <div class="skill col other-skills">
-                <h3 class="title">Other notable skills/technologies:</h3>
-                <ul class="skills list long-list">
-                    <li>Windows, Mac, iPhone, Android: used both professionally and personally.</li>
-                    <li>Apache: Familiarity with working on (configuring/maintaining) a local Apache instance.</li>
-                    <li>SVN, Git</li>
-                    <li>Regex <span class="since">used intermittently since: <time datetime="2011" class="since-date">2011</time></span></li>
-                    <li>JSP <span class="since">used rarely since: <time datetime="2011" class="since-date">2011</time></span></li>
-                    <li>XML, XSLT <span class="since">used rarely since: <time datetime="2009" class="since-date">2009</time></span></li>
-                    <li>SQL: a solid grasp of writing queries with some exposure to performance tuning and optimisations for queries. Understanding of relational database design and n-tier normalisation.</li>
-                    <li>PHP, C#, Java: varied or limited experience/exposure having worked on a number of different projects that may have used these programming languages.</li>
-                    <li>MongoDB: limited knowledge/exposure but took an online course in order to get some experience.</li>
-                    <li>Photoshop: reasonable usage, knowing how to take designs and images and do simplistic editing.</li>
-                </ul>
-            </div>
-        </section>
+    {% assign sortedJobs = site.jobs | reverse %}
+    {% for job in sortedJobs %}
+    <div class="job">
+        <h3 class="title">
+            <span class="company">{{ job.company }}</span>
+            <span class="employment-date">
+                <time class="start-date" datetime="{{ job.startDate }}">{{ job.startDate | date: "%Y %B" }}</time>
+                <time class="end-date" datetime="{{ job.endDate }}">{{ job.endDate | date: "%Y %B" }}</time>
+            </span>
+        </h3>
 
-        <section class="section group general-information">
-            <h2 class="title title-section">General Information</h2>
-            <p>I’m passionate about web development with a real desire to produce the best outcome possible for both end users and the business I represent. I like to work towards having an optimal process in place so a given team or individual can more easily produce the best work possible, to me lately this means that I like to work on or towards having things like automated deployment and and well scoped pieces of work so that any effort is directed towards solving the right thing!</p>
-            <p>Throughout my career as a developer I have strived to further my understanding of programs, software and the development process in general by reading material on the concepts and principals of programming (see below), I've also spent time studying and discussing best practice for performance, design, structure, function, implementation and testing of websites and pages. I'm particularly keen on trying to make sure the end-user performance of pages is as good as it reasonably can be (fast performance is a never ending goal).</p>
-            <p>My hobbies include a variety of sports, particularly football, which I spend a lot of free time doing; I really enjoy snowboarding, regardless of my skill level. I used to spend some of my time playing some chess, solving logic puzzles and doing crosswords but I find less time for those things now.</p>
-        </section>
+        {{ job.content | markdownify }}
     </div>
-</body>
+    {% endfor %}
 
-</html>
+    <div class="jobs jobs--older collapsed">
+        <div class="job">
+            <h3 class="title">
+                <span class="company">AC Appointments</span>
+                <span class="employment-date">
+                    <time class="start-date" datetime="2003-09">Sep 2003</time>
+                    <time class="end-date" datetime="2004-03">March 2004</time>
+                </span>
+            </h3>
+            <p>Technical Data Logging for FLS.</p>
+        </div>
+        <div class="job">
+            <h3 class="title">
+                <span class="company">Avery Associates</span>
+                <span class="employment-date">
+                    <time class="start-date" datetime="2001-11">Nov 2001</time>
+                    <time class="end-date" datetime="2002-03">March 2002</time>
+                </span>
+            </h3>
+            <p>Sales Rep and product demonstrator for Epson Printers in DSG.</p>
+        </div>
+        <div class="job">
+            <h3 class="title">
+                <span class="company">Avery Associates</span>
+                <span class="employment-date">
+                    <time class="start-date" datetime="2001-08">August 2001</time>
+                    <time class="end-date" datetime="2001-09">September 2001</time>
+                </span>
+            </h3>
+            <p>Sales Rep for Packard Bell computers in DSG.</p>
+        </div>
+    </div>
+</section>
+
+{% include skills.html %}
