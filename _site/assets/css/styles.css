@@ -179,9 +179,11 @@ a:active { color: #f03a47; }
 
 .contact-details { margin: 1em auto; max-width: 25em; }
 
-.contact-details dt { font-weight: bold; }
+.contact-details dl { display: flex; flex-flow: row wrap; justify-content: flex-end; }
 
-.contact-details dd { margin-left: 1.5em; }
+.contact-details dt { align-self: flex-start; font-weight: bold; min-width: 7em; padding-right: 1em; text-align: right; }
+
+.contact-details dd { margin-left: 0; flex: auto 0; min-width: 17em; }
 
 .job { border-bottom: #5e5e5e solid 0.2em; padding-bottom: 1em; margin-bottom: 1em; }
 .job:last-child { border-bottom: 0 none; }

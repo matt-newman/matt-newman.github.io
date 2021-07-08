@@ -97,11 +97,23 @@ a:active {
     max-width: 25em;
 }
 
+.contact-details dl {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
 .contact-details dt {
+    align-self: flex-start;
     font-weight: bold;
+    min-width: 7em;
+    padding-right: 1em;
+    text-align: right;
 }
 .contact-details dd {
-    margin-left: 1.5em;
+    margin-left: 0;
+    flex: auto 0;
+    min-width: 17em;
 }
 
 .job {
