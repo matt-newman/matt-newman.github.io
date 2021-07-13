@@ -17,12 +17,18 @@ img {
     display: inline-block;
 }
 
-p, ul, ol, dl {
+p,
+ul,
+ol,
+dl {
     margin: 0 0 0.75em 0;
 }
 
+*:last-child {
+    margin-bottom: 0;
+}
+
 .site-wrapper {
-    position: relative;
     max-width: 60em;
     margin: 0 auto;
     padding: 1em;
