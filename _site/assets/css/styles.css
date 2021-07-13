@@ -140,10 +140,11 @@ p, ul, ol, dl { margin: 0 0 0.75em 0; }
 
 .grid { display: grid; grid-template-columns: 1fr; grid-template-rows: auto; }
 
-@media screen and (min-width: 28em) { .grid { grid-template-columns: repeat(12, 1fr); grid-template-rows: auto; }
+@media screen and (min-width: 28em) { .grid { grid-template-columns: repeat(12, 1fr); grid-template-rows: auto; grid-column-gap: 1.5em; }
   .col { grid-column: span 12; }
   .span-12 { grid-column: span 12; }
   .span-6 { grid-column: span 6; } }
+@media screen and (min-width: 44em) { .span-4 { grid-column: span 4; } }
 body { color: #aaa; background-color: #222; font-size: 0.9em; line-height: 1.5; }
 
 :link { color: #9cc; }
