@@ -14,7 +14,7 @@ title: Matt Newman - CV
 
     {% assign sortedJobs = site.jobs | reverse %}
     {% for job in sortedJobs %}
-    <div class="job">
+    <div class="job {{ job.class }}">
         <h3 class="title">
             <span class="company">{{ job.company }}</span>
             <span class="employment-date">
@@ -29,7 +29,7 @@ title: Matt Newman - CV
 
     {% endfor %}
 
-    <div class="jobs jobs--older collapsed">
+    <div class="jobs jobs--older collapsed no-print">
         <div class="job">
             <h3 class="title">
                 <span class="company">AC Appointments</span>

@@ -189,13 +189,13 @@ a:active { color: #f03a47; }
 
 .contact-details { margin: 0 auto 1em; max-width: 25em; }
 
-.contact-details dl { display: flex; flex-flow: row wrap; justify-content: flex-start; }
+.contact-details--list { display: flex; flex-flow: row wrap; justify-content: flex-start; }
 
 .contact-details dt { align-self: flex-start; font-weight: bold; min-width: 25%; }
 
 .contact-details dd { margin-left: 1em; flex: 75% 1; }
 
-@media screen and (min-width: 28em) { .contact-details dl { justify-content: flex-end; }
+@media screen and (min-width: 28em) { .contact-details--list { justify-content: flex-end; }
   .contact-details dt { padding-right: 1em; text-align: right; }
   .contact-details dd { margin-left: 0; flex-grow: 0; } }
 @media screen and (min-width: 28em) { .site-wrapper { font-size: 110%; padding-left: 2em; padding-right: 2em; }

@@ -1,0 +1,32 @@
+body { color: #444; background: #fff; }
+
+.no-print { display: none; }
+
+.page-break { page-break-after: always; margin-bottom: 0; }
+
+.page-break::after { page-break-before: always; margin-top: 0; }
+
+:link, :visited { color: #00c; }
+
+.site-wrapper { font-size: 0.875em; }
+
+.grid { grid-template-columns: repeat(12, 1fr); grid-template-rows: auto; grid-column-gap: 1.5em; }
+
+.col { grid-column: span 12; }
+
+.span-12 { grid-column: span 12; }
+
+.span-6 { grid-column: span 6; }
+
+.span-4 { grid-column: span 4; }
+
+.section { color: #444; background: #fff; padding: 0; }
+.section :link { color: #00c; }
+
+.title, .title-main { color: #000; margin: 0.25em 0; }
+
+.employment-date { color: #666; }
+
+.contact-details { margin-bottom: 0; margin-left: 0; margin-right: 0; }
+
+.contact-details--list dt, .contact-details--list dd { min-width: auto; }

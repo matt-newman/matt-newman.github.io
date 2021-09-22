@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <title>Matt Newman - CV</title>
 
-    <link rel="stylesheet" href="/assets/css/styles.css" /></head>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" media="print" href="/assets/css/print.css">
     <script type="text/javascript" src="/assets/js/main.js" async defer></script>
   </head>
   <body>
@@ -15,24 +16,24 @@
 </header>
 
 <div class="contact-details group span-12">
-    <dl>
+    <dl class="contact-details--list">
         <dt>Email:</dt>
         <dd>
             <a href="mailto:cv@mattnewman.me?subject=Contact via Online CV">cv@mattnewman.me</a>
         </dd>
-        <dt>Website:</dt>
-        <dd>
+        <dt class="no-print">Website:</dt>
+        <dd class="no-print">
             <a href="https://matt-newman.github.io/">https://matt-newman.github.io/</a>
         </dd>
-        <dt>LinkedIn:</dt>
-        <dd>
+        <dt class="no-print">LinkedIn:</dt>
+        <dd class="no-print">
             <a href="https://linkedin.com/in/mattnewman83">https://linkedin.com/in/mattnewman83</a>
         </dd>
-        <dt>GitHub:</dt>
-        <dd>
+        <dt class="no-print">GitHub:</dt>
+        <dd class="no-print">
             <a href="https://github.com/matt-newman">https://github.com/matt-newman</a>
         </dd>
-        <dd>
+        <dd class="no-print">
             <a href="https://github.com/TMG-MattNewman">https://github.com/TMG-MattNewman</a>
         </dd>
     </dl>
@@ -61,7 +62,7 @@
 
     
     
-    <div class="job">
+    <div class="job ">
         <h3 class="title">
             <span class="company">News UK</span>
             <span class="employment-date">
@@ -119,7 +120,7 @@
     </div>
 
     
-    <div class="job">
+    <div class="job ">
         <h3 class="title">
             <span class="company">Telegraph Media Group</span>
             <span class="employment-date">
@@ -136,7 +137,7 @@
     <p>I was part of a small set of people who helped to drastically improve the performance of pages on the Telegraph,
         taking Speed Index from 12s (5mb/1mb 20ms latency) to 4s. That improvement was achieved incrementally on an old
         codebase, with the new implementation of templates, that was brought down to less than 2 seconds, see:
-        https://www.telegraph.co.uk/health/ the overall performance measure was changed to leverage lighthouse reports.
+        <a href="https://www.telegraph.co.uk/health/">https://www.telegraph.co.uk/health/</a> the overall performance measure was changed to leverage lighthouse reports.
     </p>
 </div>
 
@@ -156,15 +157,15 @@
         <h4 class="title">CSS and JS linting for TMG</h4>
         <p>To help consistency of development approach and standards</p>
     </div>
-    <div class="project col span-6">
+    <div class="project col span-6 no-print">
         <h4 class="title">Adding user-commenting</h4>
         <p>Integration with 3rd Party commenting system Livefyre</p>
     </div>
-    <div class="project col span-6">
+    <div class="project col span-6 no-print">
         <h4 class="title">MyTelegraph</h4>
         <p>Allowing registered users to follow Journalists and Topics</p>
     </div>
-    <div class="project col span-6">
+    <div class="project col span-6 no-print">
         <h4 class="title">Performance improvements</h4>
         <p>Improving page load performance across the site</p>
     </div>
@@ -172,7 +173,7 @@
         <h4 class="title">Apple News Integration</h4>
         <p>Allowing telegraph news (open and premium) to be read on AppleNews</p>
     </div>
-    <div class="project col span-6">
+    <div class="project col span-6 no-print">
         <h4 class="title">Launching Travel vertical</h4>
         <p>Bring the Travel section's 3rd party parts onto the telegraph.co.uk domain</p>
     </div>
@@ -206,7 +207,7 @@
     </div>
 
     
-    <div class="job">
+    <div class="job ">
         <h3 class="title">
             <span class="company">IG Group</span>
             <span class="employment-date">
@@ -220,33 +221,32 @@
 </div>
 
 <div class="group grid two-column projects">
-    <div class="project col">
+    <div class="project col span-6">
         <h4 class="title">Building <a href="http://IG.com">IG.com</a></h4>
         <p>Consolidating IG’s multiple websites (12 – one per country) down to just <a href="http://ig.com">ig.com</a>.
             This involved moving from a custom internal CMS to Adobe’s CQ CMS (now AEM). It posed a number of design and
             SEO challenges that had to be solved as well.</p>
     </div>
-    <div class="project col">
+    <div class="project col span-6">
         <h4 class="title">Improving the deployment process:</h4>
         <p>The objective was to move from a 4 week release cycle down to 2 weeks, which involved introducing unit tests
             and functional testing as well as a script to run for the deploy process itself. I introduced and trained
             the team in writing and using unit and functional tests.</p>
     </div>
-    <div class="project col">
+    <div class="project col span-6">
         <h4 class="title">Making <a href="http://www.ig.com/">IG.com</a> responsive:</h4>
         <p>In order to comply with Google’s ‘mobile-friendly’ directives we established a number of best practices for
             the content teams to follow and tweaked components to make them work across as many devices as possible.</p>
     </div>
-    <div class="project col">
+    <div class="project col span-6">
         <h4 class="title">Stronger Encryption:</h4>
-        <p>In order to address a potential https exploit on an Akamai Edge server we had to work with several teams to
-            implement a version of the password reset functionality that added another layer of encryption to the
-            password being submitted. This work was also designed to follow the principals of graceful degradation and
-            progressive enhancement.</p>
+        <p>In order to address a potential https exploit on an Akamai Edge server we worked with several teams to
+            implement a version of the password reset functionality adding a layer of encryption to the
+            password being submitted. This work was also designed to follow the principals of graceful degradation.</p>
     </div>
 </div>
 
-<div class="technologies">
+<div class="technologies no-print">
     <h4 class="title">Technologies used or exposed to:</h4>
     <ul class="list technologies long-list collapsed">
         <li>Javascript</li>
@@ -279,7 +279,7 @@
     </div>
 
     
-    <div class="job">
+    <div class="job ">
         <h3 class="title">
             <span class="company">First*Clarity</span>
             <span class="employment-date">
@@ -300,7 +300,7 @@
         them to solve any problem in the best way possible.</p>
 </div>
 
-<div class="technologies">
+<div class="technologies no-print">
     <h4 class="title">Technologies used or exposed to:</h4>
     <ul class="list technologies long-list collapsed">
         <li>Javascript</li>
@@ -324,7 +324,7 @@
     </div>
 
     
-    <div class="job">
+    <div class="job ">
         <h3 class="title">
             <span class="company">Collective Colour</span>
             <span class="employment-date">
@@ -342,7 +342,7 @@
     </div>
 
     
-    <div class="job">
+    <div class="job no-print">
         <h3 class="title">
             <span class="company">Netizen Digital</span>
             <span class="employment-date">
@@ -359,7 +359,7 @@
     </div>
 
     
-    <div class="job">
+    <div class="job no-print">
         <h3 class="title">
             <span class="company">Freelance Web Developer</span>
             <span class="employment-date">
@@ -376,7 +376,7 @@
     </div>
 
     
-    <div class="job">
+    <div class="job no-print">
         <h3 class="title">
             <span class="company">Netergy</span>
             <span class="employment-date">
@@ -394,7 +394,7 @@
 
     
 
-    <div class="jobs jobs--older collapsed">
+    <div class="jobs jobs--older collapsed no-print">
         <div class="job">
             <h3 class="title">
                 <span class="company">AC Appointments</span>
