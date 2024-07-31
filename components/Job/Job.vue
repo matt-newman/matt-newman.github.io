@@ -7,17 +7,19 @@ defineProps({
     startDate: String,
     endDate: String,
     intro: String,
-    excerpt: String,
-    body: String,
+    body: Object,
+    excerpt: Object,
 })
 </script>
 
 <template>
     <JobHeader :company="company" :position="position" :startDate="startDate" :endDate="endDate" />
+
     <div class="job--intro">
         <ContentRendererMarkdown :value="excerpt" />
     </div>
-    <div class="job--full" style="color: red">
-        <ContentRendererMarkdown :value="body" />
+
+    <div class="job--full hidden" hidden>
+        <!-- <ContentRendererMarkdown :value="body" /> -->
     </div>
 </template>

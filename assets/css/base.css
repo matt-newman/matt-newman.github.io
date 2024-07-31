@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    background:
+        /* url('~/assets/images/altered-code-photo-mattnewman.jpg') no-repeat top center, 1200x350 */
+        /* linear-gradient(#333 0%, #333 350px, transparent 350px, transparent 100%),  */
+        linear-gradient(-25deg, #999 70%, #ccc 50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl {
+    margin: 0 0 0.75em 0;
+}
+
+*:last-child {
+    margin-bottom: 0;
+}
+
+:root {
+    --content-bg-color: #eee;
+    --content-text-color: #444;
+}
+
+.site-wrapper {
+    /* background: url('~/assets/images/altered-code-photo-mattnewman.jpg') no-repeat top center, linear-gradient(-60deg, #333 0%, #333 50%, #999 50%); */
+    /* background-image: ;
+    background-repeat: no-repeat;
+    background-position: top center; */
+    box-shadow: rgba(0, 0, 0, 25%) 25px 15px;
+    max-width: 1200px;
+    margin: 3em auto;
+    font-size: 1.5rem;
+}
+
+.site-header {
+    background: linear-gradient(180deg, rgba(0,0,0,30%), rgba(0,0,0,80%)), url('~/assets/images/altered-code-photo-mattnewman.jpg') no-repeat top center;
+    /* 1200x350 */
+
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-shadow: 3px 2px #000;
+}
+
+.site-title {
+    font-size: 7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 0;
+}
+
+.site-subtitle {
+    font-size: 3rem;
+}
+
+.content-wrapper {
+    background-color: var(--content-bg-color);
+    padding: 1em 2em;
+}
+
+.content {}
+
+.site-footer {
+    background-color: var(--content-bg-color);
+    padding: 1em 2em;
+}
+
+
+/* FONT COLORS */
+:root {
+    color: var(--content-text-color);
+}
+
+.site-header {
+    color: #fff;
+}

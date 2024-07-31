@@ -14,9 +14,9 @@ const dateOptions = {
 </script>
 
 <template>
-    <h4 class="job--dates">
+    <h5 class="job--dates">
         <span class="job--start-date">{{ dateFormatter(startDate, dateOptions) }}</span>
-        <span class="job--date-seperator"> &hyphen; </span>
-        <span class="job--end-date">{{ dateFormatter(endDate, dateOptions) }}</span>
-    </h4>
+        <span v-if="endDate" class="job--date-seperator"> &hyphen; </span>
+        <span v-if="endDate" class="job--end-date">{{ dateFormatter(endDate, dateOptions) }}</span>
+    </h5>
 </template>

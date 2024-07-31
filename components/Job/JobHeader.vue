@@ -13,8 +13,8 @@ defineProps({
 
 <template>
     <header class="job--header">
-        <h2 class="job--company">{{ company }}</h2>
-        <h3 class="job--position">{{ position }}</h3>
+        <h3 class="job--company">{{ company }}</h3>
+        <h4 class="job--position">{{ position }}</h4>
         <JobDates :startDate="startDate" :endDate="endDate" />
     </header>
 </template>
