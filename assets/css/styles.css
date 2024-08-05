@@ -1,0 +1,113 @@
+body {
+    background:
+    /* url('~/assets/images/altered-code-photo-mattnewman.jpg') no-repeat top center, 1200x350 */
+    /* linear-gradient(#333 0%, #333 350px, transparent 350px, transparent 100%),  */
+    linear-gradient(-16deg, #fa3 80%, #ddd 80%);
+}
+
+.site-wrapper {
+    background-color: var(--content-bg-color);
+    font-size: 0.9rem;
+    box-shadow: rgba(0, 0, 0, 25%) 25px 20px;
+    max-width: 1200px;
+    margin: 3em auto;
+}
+
+.site-header {
+    background: linear-gradient(180deg, rgba(0,0,0,30%), rgba(34,34,34,100%)), url('~/assets/images/altered-code-photo-mattnewman.jpg') no-repeat top center; /* 1200x350 */
+    min-height: 350px;
+    margin-bottom: -1px; /* to merge the header and sidebar colors */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-shadow: 3px 2px #000;
+}
+
+.site-content {
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.site-sidebar {
+    background-color: rgb(34, 34, 34);
+    color: var(--side-text-color);
+}
+
+.site-title {
+    font-size: 7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 0;
+}
+
+.site-subtitle {
+    font-size: 3rem;
+}
+
+.content {
+    margin-bottom: 2em;
+}
+
+.title {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+main .title {
+    display: inline-block;
+    border-bottom: var(--decorative-underline) solid 3px;
+    padding-bottom: 2rem;
+}
+
+.site-sidebar .title {
+    color: var(--side-header-color);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.site-sidebar .content {
+    margin-bottom: 4rem;
+}
+
+.site-sidebar .link {
+    color: var(--link-color-dark);
+}
+
+.site-sidebar .link:visited {
+    color: var(--link-color-visited);
+}
+
+.site-sidebar .link:hover,
+.site-sidebar .link:active {
+    color: var(--link-color-active);
+}
+
+.site-footer {
+    background-color: var(--content-bg-color);
+    padding: 1em 2em;
+}
+
+.job--full h4 {
+    border-bottom: solid 2px var(--decorative-underline);
+    display: inline-block;
+}
+
+.job--full h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* FONT COLORS */
+:root {
+    color: var(--content-text-color);
+}
+
+.site-header {
+    color: #fff;
+}

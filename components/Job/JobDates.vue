@@ -13,6 +13,20 @@ const dateOptions = {
 };
 </script>
 
+<style scoped>
+.job--dates {
+    font-size: 0.75rem;
+}
+
+.job--dates::before {
+    content: "[";
+    margin-left: 0.25rem;
+}
+.job--dates::after {
+    content: "]";
+}
+</style>
+
 <template>
     <h5 class="job--dates">
         <span class="job--start-date">{{ dateFormatter(startDate, dateOptions) }}</span>
