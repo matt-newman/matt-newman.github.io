@@ -18,6 +18,7 @@ defineProps({
     align-items: baseline;
     border-bottom: solid 2px var(--decorative-underline);
     margin-bottom: 0.5rem;
+    width: fit-content;
 }
 
 .job--header::before {

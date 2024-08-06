@@ -60,7 +60,7 @@ body {
 
 main .title {
     display: inline-block;
-    border-bottom: var(--decorative-underline) solid 3px;
+    border-bottom: var(--highlight-color) solid 3px;
     padding-bottom: 2rem;
 }
 

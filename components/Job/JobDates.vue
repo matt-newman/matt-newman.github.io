@@ -16,6 +16,7 @@ const dateOptions = {
 <style scoped>
 .job--dates {
     font-size: 0.75rem;
+    font-weight: normal;
 }
 
 .job--dates::before {

@@ -60,14 +60,12 @@ const [model] = defineModel();
     font-family: monospace;
     font-size: 0.8rem;
     width: fit-content;
-    border: #666 solid 3px;
-    background-color: #333;
-    color: #999;
+    color: var(--header-color--secondary);
 }
 
 .tab__label:hover {
     align-items: center;
-    color: #ccc;
+    color: var(--header-color);
 }
 
 .tab__label::after,
