@@ -35,6 +35,7 @@ dl {
     --decorative-underline: #dc6;
     --prompt-color: #dc6;
 
+    --bg-color--dark: #222;
     --header-color: #333;
     --header-color--secondary: #666;
     --side-header-color: #eee;
@@ -43,4 +44,6 @@ dl {
     --link-color-dark: #ccc;
     --link-color-active: #fff;
     --link-color-visited: #666;
+
+    --breakpoint--lg: 1000px;
 }

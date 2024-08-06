@@ -19,10 +19,6 @@ const [model] = defineModel();
 </script>
 
 <style scoped>
-.job {
-    margin-left: 0.5rem;
-}
-
 .job-wrapper {
     margin-bottom: 2rem;
 }
@@ -40,11 +36,11 @@ const [model] = defineModel();
     transition: all 0.35s;
 }
 
-.tab input:checked ~ .tab__content {
+.tab input:checked~.tab__content {
     max-height: 100rem;
 }
 
-.tab input:checked ~ .job--intro {
+.tab input:checked~.job--intro {
     display: none;
 }
 
@@ -86,7 +82,7 @@ const [model] = defineModel();
     transition: all 0.35s;
 }
 
-.tab input:checked ~ .tab__label::after {
+.tab input:checked~.tab__label::after {
     content: "less()";
 }
 
@@ -114,12 +110,20 @@ const [model] = defineModel();
         transform: rotate(90deg) translate(0);
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .job {
+        margin-left: 0.5rem;
+    }
+
+    
+}
 </style>
 
 <template>
     <div class="job-wrapper">
         <div class="job tab">
-            <input type="checkbox" :name="`job--accordion--${index}`" :id="`job--${index}`" v-model="model" >
+            <input type="checkbox" :name="`job--accordion--${index}`" :id="`job--${index}`" v-model="model">
 
             <JobHeader :company="company" :position="position" :startDate="startDate" :endDate="endDate" />
 

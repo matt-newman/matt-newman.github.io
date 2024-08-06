@@ -19,12 +19,15 @@ const dateOptions = {
     font-weight: normal;
 }
 
-.job--dates::before {
-    content: "[";
-    margin-left: 0.25rem;
-}
-.job--dates::after {
-    content: "]";
+@media screen and (min-width: 1000px) {
+    .job--dates::before {
+        content: "[";
+        margin-left: 0.25rem;
+    }
+
+    .job--dates::after {
+        content: "]";
+    }
 }
 </style>
 

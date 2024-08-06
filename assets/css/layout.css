@@ -10,7 +10,7 @@
 
 /* general column padding */
 .site-grid > * {
-    padding: 3rem;
+    padding: 1.5rem 1rem;
 }
 
 /* assign columns to grid areas */
@@ -38,5 +38,9 @@
             'site-header site-header site-header'
             'site-content site-content site-sidebar'
             'site-footer site-footer site-footer';
+    }
+
+    .site-grid > * {
+        padding: 3rem;
     }
 }

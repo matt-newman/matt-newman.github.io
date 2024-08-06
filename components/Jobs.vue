@@ -32,7 +32,16 @@ const collapseAll = () => {
 <style scoped>
 .jobs--toggle-wrapper {
     display: inline-block;
-    transform: translate(2rem, -0.5rem);
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .jobs--toggle-wrapper {
+        margin-left: 2rem;
+        transform: translateY(-0.5rem);
+    }
 }
 </style>
 

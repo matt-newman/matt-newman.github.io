@@ -1,3 +1,35 @@
+.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+.skip-to-main-content-link:focus {
+    left: 1rem;
+    transform: translate(0%, 4rem);
+    opacity: 1;
+}
+
+.back-to-top {
+    --offset: 25rem;
+    position: sticky;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    bottom: 1rem;
+    left: calc(100vw - 8rem);
+    margin-top: calc(100vh + var(--offset));
+    padding: 10px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+    white-space: nowrap;
+} 
+
 .truncate {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 6);
@@ -16,6 +48,9 @@
             word-break: break-all;
         }
     }
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 

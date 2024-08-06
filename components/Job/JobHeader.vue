@@ -12,13 +12,9 @@ defineProps({
 
 <style scoped>
 
+
 .job--header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    border-bottom: solid 2px var(--decorative-underline);
     margin-bottom: 0.5rem;
-    width: fit-content;
 }
 
 .job--header::before {
@@ -31,7 +27,7 @@ defineProps({
     transform: translate(-25px, 2px);
 }
 
-.job--header > * {
+.job--header>* {
     margin-bottom: 0;
 }
 
@@ -40,13 +36,21 @@ defineProps({
     font-weight: 500;
 }
 
-.job--company::after {
-    content: "-";
-    margin: 0 0.5rem;
-}
+.job--position {}
 
-.job--position {
+@media screen and (min-width: 1000px) {
+    .job--header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        border-bottom: solid 2px var(--decorative-underline);
+        width: fit-content;
+    }
 
+    .job--company::after {
+        content: "-";
+        margin: 0 0.5rem;
+    }
 }
 </style>
 
