@@ -1,7 +1,24 @@
 <script setup>
+useHead({
+    bodyAttrs: {
+        class: 'no-js',
+    },
+});
+
+const noJS = () => {
+    document.querySelector('body').classList.remove('no-js');
+}
+
+onMounted(() => {
+    setTimeout(() => {
+        noJS();
+    }, 1) // this is required for DOM to exist in vuejs
+})
+
 </script>
 
-<template>
+
+<template class="no-js">
     <a href="#site-content" class="skip-to-main-content-link screen-reader-text">Skip to main content</a>
 
     <div class="site-wrapper site-grid">

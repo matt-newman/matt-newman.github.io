@@ -1,5 +1,5 @@
 <script setup>
-import { contactDetails } from '../content/_contact.js';
+import { contactDetails } from './_contact';
 </script>
 
 <style scoped>

@@ -30,6 +30,11 @@ const collapseAll = () => {
 </script>
 
 <style scoped>
+
+.no-js .jobs--toggle-wrapper {
+    display: none;
+}
+
 .jobs--toggle-wrapper {
     display: inline-block;
     font-size: 0.7rem;
