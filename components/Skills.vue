@@ -1,6 +1,6 @@
 await queryContent('/hello').findOne()
 <script setup>
-import { skills } from './_skills';
+import { skills } from '../assets/data/_skills';
 </script>
 
 <style scoped>
@@ -33,11 +33,11 @@ import { skills } from './_skills';
 <!-- components/Contact/skills.vue -->
 <template>
     <section class="content content--skills">
-        <h3 class="title skills-header">
+        <h3 class="title skills-header no-print">
             Skills
         </h3>
         <template v-for="(value, key) in skills" :key=value>
-            <div class="skills-list">
+            <div class="skills-list" :class="`${key === 'cms'? 'no-print' : ''}`">
                 <h4 class="title skills-list--title">{{ key }}</h4>
                 <ul class="skills-list--list">
                     <template v-for="(term, index) in value" :key=term>

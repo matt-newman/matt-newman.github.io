@@ -116,7 +116,7 @@ const [model] = defineModel();
         margin-left: 0.5rem;
     }
 
-    
+
 }
 </style>
 
@@ -127,15 +127,15 @@ const [model] = defineModel();
 
             <JobHeader :company="company" :position="position" :startDate="startDate" :endDate="endDate" />
 
-            <div class="job--intro">
+            <div class="job--intro" :class="`${old ? 'print' : ''}`">
                 <ContentRendererMarkdown :value="excerpt" />
             </div>
 
-            <div class="job--full tab__content">
+            <div class="job--full tab__content" :class="`${old ? 'no-print' : ''}`">
                 <ContentRendererMarkdown :value="body" />
             </div>
 
-            <label :for="`job--${index}`" class="tab__label"></label>
+            <label :for="`job--${index}`" class="tab__label no-print"></label>
         </div>
     </div>
 </template>

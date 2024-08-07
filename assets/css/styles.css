@@ -114,18 +114,11 @@ main .title {
 
     .site-header {
         background: linear-gradient(180deg, rgba(0, 0, 0, 30%), rgba(34, 34, 34, 100%)), url('~/assets/images/altered-code-photo-mattnewman.jpg') no-repeat top center;
-        /* 1200x350 */
+        
         min-height: 350px;
         margin-bottom: -1px;
         /* to merge the header and sidebar colors */
     
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: column wrap;
-    
-        font-variant: small-caps;
-        letter-spacing: 1px;
         text-shadow: 3px 2px #000;
     }
 

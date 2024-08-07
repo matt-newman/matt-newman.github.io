@@ -55,7 +55,7 @@ const collapseAll = () => {
 
         <h2 class="title title--experience">Experience</h2>
 
-        <div class="jobs--toggle-wrapper">
+        <div class="jobs--toggle-wrapper no-print">
             <button class="jobs--toggle jobs--toggle--expand" @click="expandAll()">Expand All</button>
             <span class="jobs--toggle--seperator"> / </span>
             <button class="jobs--toggle jobs--toggle--collapse" @click="collapseAll()">Collapse All</button>

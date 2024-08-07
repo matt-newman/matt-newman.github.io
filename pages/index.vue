@@ -24,7 +24,7 @@ onMounted(() => {
     <div class="site-wrapper site-grid">
         <header class="site-header">
             <h1 class="site-title">Matt Newman</h1>
-            <div class="site-subtitle">Engineer</div>
+            <div class="site-subtitle no-print">Engineer</div>
         </header>
 
         <main class="site-content">
@@ -32,15 +32,13 @@ onMounted(() => {
         </main>
 
         <aside class="aside-wrapper site-sidebar">
-            <section class="content content--about">
-                <About />
-            </section>
+            <About />
             <Skills />
             <Contact />
         </aside>
     </div>
 
-    <a href="#top" class="back-to-top">
+    <a href="#top" class="back-to-top no-print">
         <span>Back to top</span>
     </a>
 

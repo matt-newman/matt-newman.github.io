@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '~/assets/css/layout.css',
     '~/assets/css/styles.css',
     '~/assets/css/utils.css',
+    '~/assets/css/print.css',
   ],
   devtools: {
     enabled: true
