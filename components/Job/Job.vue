@@ -123,7 +123,7 @@ const [model] = defineModel();
 <template>
     <div class="job-wrapper">
         <div class="job tab">
-            <input type="checkbox" :name="`job--accordion--${index}`" :id="`job--${index}`" v-model="model">
+            <input type="checkbox" :name="`job--accordion--${index}`" :id="`job--${index}`" v-model="model" :checked="index === 0">
 
             <JobHeader :company="company" :position="position" :startDate="startDate" :endDate="endDate" />
 
