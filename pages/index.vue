@@ -15,6 +15,8 @@ onMounted(() => {
     }, 1) // this is required for DOM to exist in vuejs
 })
 
+import * as jobs from '../assets/data/jobs';
+
 </script>
 
 
@@ -28,7 +30,7 @@ onMounted(() => {
         </header>
 
         <main class="site-content">
-            <Jobs />
+            <Jobs :jobs="jobs" />
         </main>
 
         <aside class="aside-wrapper site-sidebar">

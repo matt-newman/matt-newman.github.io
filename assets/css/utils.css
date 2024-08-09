@@ -1,3 +1,6 @@
+@import url('accordion.css');
+/* @import url('truncate.css'); */
+
 .skip-to-main-content-link {
     position: absolute;
     left: -9999px;
@@ -28,55 +31,4 @@
     text-decoration: none;
     transition: all .25s ease-in-out;
     white-space: nowrap;
-}
-
-.truncate {
-    display: -webkit-box;
-    -webkit-line-clamp: var(--line-clamp, 6);
-    -webkit-box-orient: vertical;
-    word-break: var(--word-break, 'none');
-    overflow: hidden;
-    hyphens: auto;
-    text-align: var(--align, left);
-
-    --is-single-line: 1 - Clamp(0, Calc(var(--line-clamp) - 1), var(--line-clamp));
-    --delay: Calc(-1s * (var(--is-single-line, 1) - 1));
-    animation: states 1s var(--delay) paused;
-
-    @keyframes states {
-        0% {
-            word-break: break-all;
-        }
-    }
-}
-
-@media screen and (min-width: 1200px) {
-}
-
-
-.truncate {
-    font-size: var(--font-size, 1em);
-    width: var(--width, 80%);
-    text-shadow: 1px 3px 0 rgba(black, .3);
-    position: relative;
-    background: inherit;
-}
-
-/* // fade text's last word, if clamped ()  */
-.truncate::after {
-    content: '';
-    width: 0;
-    height: 2ch;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    pointer-events: none;
-    /* //background: linear-gradient(90deg, transparent, var(--bg)); // it's easier to work with inheritance  */
-    background: inherit;
-    mask-image: linear-gradient(to left, black, transparent);
-    transition: .2s;
-}
-
-.truncate.clamped::after {
-    width: 3em;
 }

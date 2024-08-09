@@ -1,5 +1,5 @@
 <script setup>
-import { contactDetails } from '../assets/data/_contact';
+import { contactDetails } from '../assets/data/contact';
 </script>
 
 <style scoped>

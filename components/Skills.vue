@@ -1,6 +1,6 @@
 await queryContent('/hello').findOne()
 <script setup>
-import { skills } from '../assets/data/_skills';
+import { skills } from '../assets/data/skills';
 </script>
 
 <style scoped>

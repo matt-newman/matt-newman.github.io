@@ -1,0 +1,64 @@
+/* Core styles/functionality */
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tab__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+}
+
+.tab input:checked~.tab__content {
+    max-height: 100rem;
+}
+
+.tab__label,
+.tab__close {
+    display: flex;
+    cursor: pointer;
+}
+
+.tab__label {
+    align-items: center;
+    padding: 0.25rem;
+    font-family: monospace;
+    font-size: 0.8rem;
+    width: fit-content;
+    color: var(--header-color--secondary);
+}
+
+.tab__label:hover {
+    align-items: center;
+    color: var(--header-color);
+}
+
+.tab__label::after,
+.tab__label::before {
+    padding: 0 0.25em 0 0.25em;
+}
+
+.tab__label::after {
+    align-self: flex-start;
+    content: "more() ...";
+}
+
+.tab__label::before {
+    content: "\276F";
+    color: var(--prompt-color);
+    text-align: center;
+    transform: rotate(0deg) translateY(-1px);
+    transition: all 0.35s;
+}
+
+.tab input:checked~.tab__label::after {
+    content: "less()";
+}
+
+.tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
