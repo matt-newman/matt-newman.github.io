@@ -106,7 +106,7 @@ const recentJobMaxIndex = 4;
 
             </div>
 
-            <label :for="`job--${index}`" class="tab__label no-print"></label>
+            <label :for="`job--${index}`" class="tab__label no-print"><span class="hidden">Show / Hide</span></label>
         </div>
     </div>
 </template>

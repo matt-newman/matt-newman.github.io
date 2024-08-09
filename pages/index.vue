@@ -1,5 +1,16 @@
 <script setup>
+import * as jobs from '../assets/data/jobs';
+
 useHead({
+    htmlAttrs: {
+        lang: "en"
+    },
+    charset: 'utf-8',
+    viewport: 'width=device-width, initial-scale=1',
+    title: 'Matt Newman - CV',
+    meta: [
+        { name: 'description', content: 'Matt Newman - live cirriculum vitae.' }
+    ],
     bodyAttrs: {
         class: 'no-js',
     },
@@ -14,8 +25,6 @@ onMounted(() => {
         noJS();
     }, 1) // this is required for DOM to exist in vuejs
 })
-
-import * as jobs from '../assets/data/jobs';
 
 </script>
 
