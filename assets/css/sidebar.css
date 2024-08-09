@@ -1,0 +1,33 @@
+.site-sidebar {
+    background-color: var(--bg-color--dark);
+    color: var(--side-text-color);
+}
+
+.site-sidebar .title {
+    color: var(--side-header-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.site-sidebar .content {
+    margin-bottom: 4rem;
+}
+
+.site-sidebar .link {
+    color: var(--link-color-dark);
+}
+
+.site-sidebar .link:visited {
+    color: var(--link-color-visited);
+}
+
+.site-sidebar .link:hover,
+.site-sidebar .link:active {
+    color: var(--link-color-active);
+}
+
+@media screen and (min-width: 1000px) {
+    .site-sidebar .title {
+        font-size: 2rem;
+    }
+}

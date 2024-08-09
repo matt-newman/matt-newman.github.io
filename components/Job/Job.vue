@@ -25,7 +25,7 @@ const recentJobMaxIndex = 4;
     margin-bottom: 0.5rem;
 }
 
-.projects-list h5 {
+.project-list--title {
     font-size: 0.8rem;
     margin-bottom: 0;
 }

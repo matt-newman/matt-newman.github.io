@@ -1,6 +1,4 @@
 <script setup>
-import { dateFormatter } from '../dateFormatter';
-
 defineProps({
     seperator: String,
     startDate: String,

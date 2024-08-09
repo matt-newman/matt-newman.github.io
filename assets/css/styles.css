@@ -1,3 +1,4 @@
+@import url('./sidebar.css');
 
 .site-wrapper {
     background-color: var(--content-bg-color);
@@ -17,11 +18,6 @@
     letter-spacing: 1px;
 }
 
-.site-sidebar {
-    background-color: var(--bg-color--dark);
-    color: var(--side-text-color);
-}
-
 .site-title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 0;
@@ -35,33 +31,6 @@ main .title {
 .title {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
-}
-
-.site-sidebar {
-
-}
-
-.site-sidebar .title {
-    color: var(--side-header-color);
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.site-sidebar .content {
-    margin-bottom: 4rem;
-}
-
-.site-sidebar .link {
-    color: var(--link-color-dark);
-}
-
-.site-sidebar .link:visited {
-    color: var(--link-color-visited);
-}
-
-.site-sidebar .link:hover,
-.site-sidebar .link:active {
-    color: var(--link-color-active);
 }
 
 .site-footer {
@@ -80,10 +49,7 @@ main .title {
 
 @media screen and (min-width: 1000px) {
     body {
-        background:
-            /* url('~/assets/images/altered-code-photo-mattnewman.jpg') no-repeat top center, 1200x350 */
-            /* linear-gradient(#333 0%, #333 350px, transparent 350px, transparent 100%),  */
-            linear-gradient(-16deg, #fa3 80%, #ddd 80%);
+        background: linear-gradient(-16deg, #fa3 80%, #ddd 80%);
     }
 
     .title {
@@ -125,9 +91,5 @@ main .title {
         display: inline-block;
         border-bottom: var(--highlight-color) solid 3px;
         padding-bottom: 2rem;
-    }    
-
-    .site-sidebar .title {
-        font-size: 2rem;
     }
 }
