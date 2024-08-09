@@ -1,21 +1,13 @@
 <script setup>
-import JobHeader from './JobHeader';
+import JobHeader from './JobHeader.vue';
 
 defineProps({
-    oldJob: Boolean,
-    company: String,
-    position: String,
-    startDate: String,
-    endDate: String,
-    intro: String,
-    body: Object,
-    excerpt: Object,
     index: Number,
-    old: Boolean,
+    job: Object,
 })
 
 const [model] = defineModel();
-
+const recentJobMaxIndex = 4;
 </script>
 
 <style scoped>
@@ -23,116 +15,95 @@ const [model] = defineModel();
     margin-bottom: 2rem;
 }
 
-/* Core styles/functionality */
-.tab input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
+.job--intro {
+    margin-bottom: 0.5rem;
 }
 
-.tab__content {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.35s;
+.job-heading {
+    border-bottom: solid 2px var(--decorative-underline);
+    display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
-.tab input:checked~.tab__content {
-    max-height: 100rem;
-}
-
-.tab input:checked~.job--intro {
-    display: none;
-}
-
-.tab__label,
-.tab__close {
-    display: flex;
-    cursor: pointer;
-}
-
-.tab__label {
-    align-items: center;
-    padding: 0.25rem;
-    font-family: monospace;
+.projects-list h5 {
     font-size: 0.8rem;
-    width: fit-content;
-    color: var(--header-color--secondary);
+    margin-bottom: 0;
 }
 
-.tab__label:hover {
-    align-items: center;
-    color: var(--header-color);
+.project-list--item {
+    margin-bottom: 0.5rem;
 }
 
-.tab__label::after,
-.tab__label::before {
-    padding: 0 0.25em 0 0.25em;
-}
-
-.tab__label::after {
-    align-self: flex-start;
-    content: "more() ...";
-}
-
-.tab__label::before {
-    content: "\276F";
-    color: var(--prompt-color);
-    text-align: center;
-    transform: rotate(0deg) translateY(-1px);
-    transition: all 0.35s;
-}
-
-.tab input:checked~.tab__label::after {
-    content: "less()";
-}
-
-/* .tab input:checked ~ .tab__label::before {
-    transform: rotate(270deg);
-} */
-
-.tab__close {
-    justify-content: flex-end;
-    padding: 0.5rem 1rem;
+.tech-list {
     font-size: 0.75rem;
+    padding-left: 0;
 }
 
-/* Arrow animation */
-/* .tab input:not(:checked) ~ .tab__label:hover::before {
-    animation: bounce 2.5s infinite;
-} */
+.tech-list--item {
+    display: inline-block;
+}
 
-@keyframes bounce {
-    25% {
-        transform: rotate(90deg) translate(.25rem);
-    }
+.tech-list--item::after {
+    content: ", ";
+    padding-right: 0.3rem;
+}
 
-    75% {
-        transform: rotate(90deg) translate(0);
-    }
+.tech-list--item:last-child::after {
+    content: "";
 }
 
 @media screen and (min-width: 1000px) {
     .job {
         margin-left: 0.5rem;
     }
-
-
 }
 </style>
 
 <template>
     <div class="job-wrapper">
         <div class="job tab">
-            <input type="checkbox" :name="`job--accordion--${index}`" :id="`job--${index}`" v-model="model" :checked="index === 0">
 
-            <JobHeader :company="company" :position="position" :startDate="startDate" :endDate="endDate" />
+            <input type="checkbox" :name="`job--accordion--${index}`" :id="`job--${index}`" v-model="model"
+                :checked="index === 0">
 
-            <div class="job--intro" :class="`${old ? 'print' : ''}`">
-                <ContentRendererMarkdown :value="excerpt" />
+            <JobHeader :company="job.company" :position="job.position" :startDate="job.startDate"
+                :endDate="job.endDate" />
+
+            <div class="job--intro" :class="`${index > recentJobMaxIndex ? 'print' : ''}`">
+                <div v-html="job.intro"></div>
             </div>
 
-            <div class="job--full tab__content" :class="`${old ? 'no-print' : ''}`">
-                <ContentRendererMarkdown :value="body" />
+            <div class="job--full tab__content" :class="`${index > recentJobMaxIndex ? 'no-print' : ''}`">
+                
+                <div v-html="job.full"></div>
+
+                <section class="content content--projects" v-if="job.projects.length > 0">
+                    <h4 class="title--project job-heading">
+                        Projects
+                    </h4>
+                    <div class="projects-list">
+                        <template v-for="(project) in job.projects" :key=project>
+                            <div class="project-list--item">
+                                <h5 class="project-list--title">{{ project.title }}</h5>
+                                <div class="project-list--text">{{ project.text }}</div>
+                            </div>
+                        </template>
+                    </div>
+                </section>
+
+                <section class="content content--tech" v-if="job.tech.length > 0">
+                    <h4 class="title--tech job-heading">
+                        Tech
+                    </h4>
+                    <div class="tech-list--wrapper">
+                        <ul class="tech-list">
+                            <li v-for="(tech) in job.tech" :key=tech class="tech-list--item">
+                                {{ tech }}
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
             </div>
 
             <label :for="`job--${index}`" class="tab__label no-print"></label>

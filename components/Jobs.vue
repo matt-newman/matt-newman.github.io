@@ -1,11 +1,8 @@
 <script setup>
-import Job from './Job/Job';
 
-const recentJobsNumber = 4;
-const recentJobs = { path: '/jobs', limit: recentJobsNumber, sort: [{ startDate: -1 }] };
-const oldJobs = { path: '/jobs', skip: recentJobsNumber, sort: [{ startDate: -1 }] };
-
-// expand all
+defineProps({
+    jobs: Object,
+})
 
 const checkedJobs = ref([]);
 const checkboxSelector = '.job input[type=checkbox]';
@@ -27,6 +24,12 @@ const collapseAll = () => {
         element.checked = false;
     });
 }
+
+const sortJobs = ((a, b) => {
+    const dateA = new Date(a.startDate);
+    const dateB = new Date(b.startDate);
+    return dateB - dateA;
+});
 </script>
 
 <style scoped>
@@ -52,7 +55,6 @@ const collapseAll = () => {
 
 <template>
     <section class="content content--jobs">
-
         <h2 class="title title--experience">Experience</h2>
 
         <div class="jobs--toggle-wrapper no-print">
@@ -61,14 +63,9 @@ const collapseAll = () => {
             <button class="jobs--toggle jobs--toggle--collapse" @click="collapseAll()">Collapse All</button>
         </div>
 
-        <ContentList :query="recentJobs" v-slot="{ list }">
-            <Job v-for="(job, index) in list" :key="job._path" v-bind=job :index=index v-model="checkedJobs[index]" />
-        </ContentList>
-
-        <ContentList :query="oldJobs" v-slot="{ list }">
-            <Job v-for="(job, index) in list" :key="job._path" v-bind="job" :old=true
-                :index="(index + recentJobsNumber)" v-model="checkedJobs[(index + recentJobsNumber)]" />
-        </ContentList>
+        <div v-for="(job, index) in Object.values(jobs).sort(sortJobs)" :key="job">
+            <Job :job="job" :index=index v-model="checkedJobs[index]" />
+        </div>
 
     </section>
 </template>

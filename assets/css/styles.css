@@ -27,10 +27,6 @@
     margin-bottom: 0;
 }
 
-.content {
-    margin-bottom: 2em;
-}
-
 main .title {
     display: inline-block;
     border-bottom: var(--highlight-color) solid 3px;
@@ -71,16 +67,6 @@ main .title {
 .site-footer {
     background-color: var(--content-bg-color);
     padding: 1em 2em;
-}
-
-.job--full h4 {
-    border-bottom: solid 2px var(--decorative-underline);
-    display: inline-block;
-}
-
-.job--full h5 {
-    font-size: 0.9rem;
-    margin-bottom: 0;
 }
 
 /* FONT COLORS */

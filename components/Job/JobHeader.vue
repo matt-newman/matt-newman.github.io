@@ -12,7 +12,6 @@ defineProps({
 
 <style scoped>
 
-
 .job--header {
     margin-bottom: 0.5rem;
 }

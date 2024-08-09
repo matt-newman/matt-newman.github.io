@@ -1,0 +1,9 @@
+export { cloudcall } from "./9.cloudcall.ts";
+export { newsuk } from "./8.newsuk.ts";
+export { telegraph } from "./7.telegraph.ts";
+export { igindex } from "./6.ig.ts";
+export { firstclarity } from "./5.first-clarity.ts";
+export { collective } from "./4.collective-colour.ts";
+export { netizen } from "./3.netizen-digital.ts";
+export { freelance } from "./2.golf-web.ts";
+export { netergy } from "./1.netergy.ts";

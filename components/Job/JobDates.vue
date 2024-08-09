@@ -11,6 +11,27 @@ const dateOptions = {
     month: 'short',
     year: 'numeric'
 };
+
+const calculateTimeDifference = (start, end) => {
+    let output = '';
+    let startDate = new Date(start);
+    let endDate = new Date(end);
+    let years = endDate.getFullYear() - startDate.getFullYear();
+    let totalMonths = years * 12 - startDate.getMonth() + endDate.getMonth();
+    let months = totalMonths % 12;
+
+    if ( years > 0 ) {
+        output += years;
+        output += ' year' + (years > 1 ? 's' : '')
+    }
+
+    if ( months > 0 ) {
+        output += ' ' + months;
+        output += ' month' + (months > 1 ? 's' : '')
+    }
+
+    return output;
+}
 </script>
 
 <style scoped>
@@ -21,20 +42,18 @@ const dateOptions = {
 
 @media screen and (min-width: 1000px) {
     .job--dates::before {
-        content: "[";
+        content: "(";
         margin-left: 0.25rem;
     }
 
     .job--dates::after {
-        content: "]";
+        content: ")";
     }
 }
 </style>
 
 <template>
     <h5 class="job--dates">
-        <span class="job--start-date">{{ dateFormatter(startDate, dateOptions) }}</span>
-        <span v-if="endDate" class="job--date-seperator"> &hyphen; </span>
-        <span v-if="endDate" class="job--end-date">{{ dateFormatter(endDate, dateOptions) }}</span>
+        {{ calculateTimeDifference(startDate, endDate) }}
     </h5>
 </template>
