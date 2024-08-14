@@ -1,8 +1,8 @@
 export const collective = {
     title: "Collective Colour",
     company: "Collective Colour",
-    startDate: "2008-11-01",
-    endDate: "2010-05-31",
+    startDate: "2008-11-31",
+    endDate: "2010-06-31",
     position: "Developer",
 
     intro: `

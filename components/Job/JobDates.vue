@@ -10,22 +10,35 @@ const dateOptions = {
     year: 'numeric'
 };
 
+const monthDiff = (start, end) => {
+    let months;
+    months = (end.getFullYear() - start.getFullYear()) * 12;
+    months -= start.getMonth();
+    months += end.getMonth();
+    return months <= 0 ? 0 : months;
+}
+
+const pluralise = ( text, num ) => {
+    return text + (num > 1 ? 's' : '');
+}
+
 const calculateTimeDifference = (start, end) => {
     let output = '';
     let startDate = new Date(start);
     let endDate = new Date(end);
-    let years = endDate.getFullYear() - startDate.getFullYear();
-    let totalMonths = years * 12 - startDate.getMonth() + endDate.getMonth();
+
+    let totalMonths = monthDiff(startDate, endDate);
+    let years = Math.floor( totalMonths / 12 );
     let months = totalMonths % 12;
 
     if ( years > 0 ) {
         output += years;
-        output += ' year' + (years > 1 ? 's' : '')
+        output += pluralise(' year', years);
     }
 
     if ( months > 0 ) {
         output += ' ' + months;
-        output += ' month' + (months > 1 ? 's' : '')
+        output += pluralise(' month', months);
     }
 
     return output;

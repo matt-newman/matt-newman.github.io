@@ -44,6 +44,7 @@ export const skills = {
     misc: [
         "Testing / automation",
         "RDB design / normalisation",
+        "UX",
         "i18n",
         "a11y",
         "SEO",
