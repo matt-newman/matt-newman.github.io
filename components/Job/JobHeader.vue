@@ -37,7 +37,7 @@ defineProps({
 
 .job--position {}
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1350px) {
     .job--header {
         display: flex;
         justify-content: flex-start;

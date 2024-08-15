@@ -52,7 +52,7 @@ const recentJobMaxIndex = 4;
     content: "";
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1350px) {
     .job {
         margin-left: 0.5rem;
     }

@@ -51,7 +51,7 @@ const calculateTimeDifference = (start, end) => {
     font-weight: normal;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1350px) {
     .job--dates::before {
         content: "(";
         margin-left: 0.25rem;

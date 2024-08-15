@@ -47,7 +47,7 @@ main .title {
     color: #fff;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1350px) {
     body {
         background: linear-gradient(-16deg, #fa3 80%, #ddd 80%);
     }

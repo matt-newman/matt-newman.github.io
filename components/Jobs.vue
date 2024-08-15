@@ -45,7 +45,7 @@ const sortJobs = ((a, b) => {
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1350px) {
     .jobs--toggle-wrapper {
         margin-left: 2rem;
         transform: translateY(-0.5rem);
